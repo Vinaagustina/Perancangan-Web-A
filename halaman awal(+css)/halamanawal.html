@@ -5,7 +5,6 @@
     <link rel="stylesheet" type="text/css" href=edit.css>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel"stylesheet" type="text/css" href="halamanawal.css"> -->
     <link rel="shortcut icon" href="favicon(1).ico">
     <title>SMART ACADEMY</title>
     <style type="text/css">
@@ -27,30 +26,27 @@
     #spanduk{
         text-align: center;
         color:rgb(22, 82, 105);
-        font-family: "Segoe Print";
+        font-family: "Ink Free";
         font-weight: bold;
         font-size: 32px;
-        text-shadow: 1px 2px 1px rgb(53, 123, 163);
         height: 90px;
     }
-    .form{ 
+    .kotak{ 
         text-align: center;
         margin:50px auto;
         border-radius:30px;
-        background-color:rgba(38, 148, 165, 0.116);
-        width:550px;
-        height:400px;
+        background-color: rgba(244, 247, 250, 0.795);
+        width:450px;
+        height:380px;
         padding-bottom:0px;
     }
     .tombol{
         text-align: center;
         margin:50px auto;
         border-radius:20px;
-        border: 1px outset;
-        background-color: rgba(244, 247, 250, 0.39);
+        border: 10px;
         height: 200px;
         width: 300px;
-        padding-bottom:30px;
     }
 
     .footer{
@@ -59,83 +55,142 @@
         position: absolute;
         bottom: 0px;
         width: 100%;
-
     }
-
-
+    .cc {
+        float: left;
+        font-family: "Segoe UI";
+        color: white;
+        font-size: 14px;
+        padding-top: 10px;
+    }
+    .search {
+		padding:6px;
+		background: rgb(255, 255, 255);
+        border:0px;
+        margin-left: 10px;
+        }
+    .button {
+		position:relative;
+        border: 0;
+		padding:6px 15px;
+		left:-7px;
+		background-color:rgba(255, 255, 255, 0.61);
+		color:white; 
+    }
+    .header .logo{    
+        text-align: right;
+        font-family: 'Segoe UI';
+        font-size: 40px;
+        color: white;
+        
+    }
+    .menu{
+        float: right;
+        padding: 5px 70px 5px 50px;
+    }
+    .menukanan{   
+        text-decoration: none;
+        color: white;
+        font-family: 'Segoe UI';
+        font-size: 20px;
+    }
+    .kotakcari{
+        float: left;
+    }
+    .menukiri .jenjang{
+        text-decoration: none;
+        color: white;
+        font-family: 'Segoe UI';
+        font-size: 20px;
+    }
+    .menukiri .materi {
+        text-decoration: none;
+        color: white;
+        font-family: 'Segoe UI';
+        font-size: 20px;
+    }
+    .daftar {
+        background-color: rgba(129, 168, 192, 0.788);
+        width: 100px;
+        height: 50px;
+        border: honeydew;
+        border-radius: 20px;
+        font-size: 20px;
+        font-family: "Segoe UI";
+        color:white;
+    }
+    .masuk {
+        background-color: rgba(129, 168, 192, 0.788);
+        width: 100px;
+        height: 50px;
+        border: honeydew;
+        border-radius: 20px;
+        font-size: 20px;
+        font-family: "Segoe UI";
+        color:white;
+    }
+    .aboutus{
+        float: right;
+        font-family: "Segoe UI";
+        color: white;
+        font-size: 14px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+    #lupa{
+        text-decoration: none;
+        color: gray;
+        font-family: "Segoe UI";
+        font-size: 12px;
+        
+    }
+    
+        
 </style>
 </head>
 
 <body>
 <div class="header">
-        <p align="Right"><font face="Segoe UI"><font size="8"><font color="white">Smart Academy</font></font></font></p>
-        <span id="menu" style="float:right">
-            <a href="#">Home   |</a>
-            <a href="#">Akun   |</a>
-            <a href="#">Kontak </a>
-        </span>
-
-        <span id="kotakcari">
-                <input class="search" type="text" placeholder="Telusuri">
-        </span>
-
-        <span id="menuatas">
-            <a href="#">Kategori   |</a>
-            <a href="#">Jenjang    |</a>
-        </span>
-
-    </header>
+    <p class="logo">SMART ACADEMY</p>
+    <div class="menu">
+        <a href="#" class="menukanan">Home  |</a>
+        <a href="#"class="menukanan">Akun  |</a>
+        <a href="#" class="menukanan">Kontak</a>
+    </div>
+    <div class="kotakcari">
+        <input class="search" type="text" placeholder="Telusuri" required>	
+        <input class="button" type="button" value="Cari">		
+    </div>
+    <div class="menukiri">
+        <a href="#"class="jenjang">Jenjang   </a>
+        <a href="#"class="materi">Materi   </a>
+    </div>
 </div>
 
-
-   
-    <span id="boxmasuk">
-        <div class="content">
-                <div class="form">
-                
-                <div id="spanduk">
-                    <p>Tempat Belajar Online<br>Asyik dan Seru</p>
-                </div>
-
-                <div class="tombol">
-                    <br><br>
-                    <button style=
-                    "background-color: rgba(129, 168, 192, 0.788);
-                    width: 100px;
-                    height: 50px;
-                    border: honeydew;
-                    border-radius: 20px;font-size: large;"><font face="Segoe UI"><font color="white">Daftar</font></button>
-                    <br><br>
-                    
-                    <button style=
-                    "background-color: rgba(129, 168, 192, 0.788);
-                    width: 100px;
-                    height: 50px;
-                    border: honeydew;
-                    border-radius: 20px;font-size: large;"><font face="Segoe UI"><font color="white">Masuk</font></font></button>
-                    <br><br>
-
-                <div id="lupa">
-                    <a align = "center"><font face="Segoe UI"><font size="2"><font color="gray">Lupa Password ?</font></font></font<</a>
-                </div>
+<div class="kotak">
+        <div id="spanduk">
+            <p>Tempat Belajar Online<br>Asyik dan Seru</p>
         </div>
-    </span>
-</div>
+
+        <div class="tombol">
+            <button class="daftar">Daftar</button>
+            <br><br>
+            <button class="masuk">Masuk</button>
+            <br><br>
+            <a href="#" id="lupa">Lupa Password ?</a>
+        </div>
+    </div>
 
     
 <div class="footer">
-    <footer >
-        <span id="cc" style="float: left">
-            <a align="left"><font face="Segoe UI"><font size="2"><font color="white"> © 2019 Smart Academy  | Ketentuan layanan | Kebijakan privasi </font></font></font></a>
-        </span>
-        <a><img src="twitter (1).png" style="float:right;width:30px;height: 30px"></a>
-        <a><img src="facebook (1).png" style="float:right;width:30px;height: 30px;"></a>
-        <a><img src="google-plus (1).png" style="float:right;width:30px;height: 30px;"></a>
-
-        <span id="au" style="float:right">
-            <a align = "right"><font face="Segoe UI"><font size="2"><font color="white">About Us</font></font></font></a>
-        </span>
-    </footer>
+        <a class="cc">© 2019 Smart Academy  | Ketentuan layanan | Kebijakan privasi </a>
+        <div class="icon">
+            <a><img src="twitter (1).png" style="float:right;width:30px;height: 30px"></a>
+            <a><img src="facebook (1).png" style="float:right;width:30px;height: 30px;"></a>
+            <a><img src="google-plus (1).png" style="float:right;width:30px;height: 30px;"></a>
+        <div class="aboutus">
+            <a>About Us</a>
+        </div>
 </div>
 </body>
 </html>
