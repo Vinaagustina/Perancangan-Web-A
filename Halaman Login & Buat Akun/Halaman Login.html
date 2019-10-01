@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SMART ACADEMY</title>
+	<link rel="shortcut icon" href="favicon(1).ico">
+	<link rel="stylesheet" type="text/css" href="Halaman Login.css">
+</head>
+<body background="bg 3.jpg">
+	<div class="wrap">
+		<div class="header">
+			<header>
+				<p  align="right"><font color="white"><font size="8"><font face="Segoe UI">Smart Academy</font></font></font></p>
+				<ul id="menu1">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Akun</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul id="menu2">
+					<li> Jenjang
+						<ul>
+							<li><a href="#">SD</a></li>
+							<li><a href="#">SMP</a></li>
+							<li><a href="#">SMA</a></li>
+						</ul>
+					</li>
+					<li> Materi 
+						<ul>
+							<li><a href="#">Matematika</a></li>
+							<li><a href="#">IPA</a></li>
+							<li><a href="#">Bahasa Inggris</a></li>
+							<li><a href="#">IPS</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+				<input class="kotak" type="text" name="Telusuri" placeholder="Telusuri" style="margin:5px">
+				<input class="cari" type="button" value="cari" name="cari">
+			</header>
+		</div>
+				
+		<div class="content">
+			<div class="form">
+				<form>
+					<br> <h4 align="center"> Selamat Datang </label> </br>
+					<label> ____________________ </label> <br>
+					<br><label> Username: </label></br>
+					<input type="text" name="Username" placeholder="Masukkan Username"><br>
+					<br><label>Password: </label> </br>
+					<input type="password" name="Password" placeholder="Masukkan Password"><br>
+					<a href="#" align = "center" style="text-decoration: none;"><font face="Segoe UI"><font size="1"><font color="gray">Lupa Password ?<font></font></font></a>
+					<br></br>
+					<input type="submit" name="submit" value="Masuk">
+					<br></br>
+					<a align = "center"><font face="Segoe UI"><font size="1"><font color="gray">Sudah memiliki akun?</font></font></font></a>
+					<a class="masuk" href="#" align = "center" style="text-decoration: none"><font face="Segoe UI"><font size="1"><font color="gray">Daftar</font></font></font></a>
+				</form>
+			</div>
+		</div>
+
+		<div class="footer">
+			<footer>
+				<a  id="footer1" href="#" style="text-decoration: none;"><font face="Segoe UI"><font size="2"><font color="white"> © 2019 Smart Academy  |  Ketentuan Layanan  |  Kebijakan Privasi</font></font></font></a>
+				<a href="#"><img src="twitter.png" style="float:right;width:25px;height:25px;margin:9px;text-decoration: none"></a>
+				<a href="#"><img src="facebook.png" style="float:right;width:25px;height:25px;margin:9px;text-decoration: none;"></a>
+				<a href="#"><img src="google-plus.png" style="float:right;width:25px;height:25px;margin:9px;text-decoration: none;"></a>
+				<a id="footer">
+					<font size="2"><font color="white"> About Us </font></font>
+				</a>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
+<style type="text/css">
+	html,body {
+   		margin:0;
+   		padding:0;
+   		height:100%;
+	}
+	.wrap{
+		min-height: 100%;
+    	position: relative;
+	}
+	.wrap .header{
+		background-color:#5F9EA0;
+		width:100%;
+		padding:5px;
+	}
+	.wrap .content{
+		padding:10px;
+   		padding-bottom:50px; 
+	}
+	.wrap .header #menu1{
+		margin: 15px auto;
+    	padding: 0;
+	}
+	.wrap .header #menu1 li {
+    	float: right;
+    	list-style: none;
+    	margin-left: 15px;
+    	margin-right: 15px;	
+	}
+	.wrap .header #menu1 li a {
+    	text-decoration: none;	
+	}
+	.wrap .header #menu2{
+		margin: 15px auto;
+    	padding: 0;
+	}
+	.wrap .header #menu2 li {
+    	float: left;
+    	text-decoration: none;
+    	list-style: none;
+    	margin-left: 15px;
+    	margin-right: 15px;	
+    	width: 5%;
+    	height: 10%;
+    	border: 0;
+	}
+	.wrap .header #menu2 li:hover ul{
+		display: block;
+
+	}
+	.wrap .header #menu2 li ul{
+		display: none;
+
+	}
+	.wrap .header #menu2 li a{
+    	text-decoration: none;	
+	}
+	.wrap .header #menu2 li ul li{
+		width: 100%;
+		height: 30px;
+		border: 1px;
+
+	}
+	.wrap .header .cari {
+    	position:relative;
+    	padding: 2px 7px;
+    	left:-8px;
+    	border:1px solid #A9A9A9;
+    	background-color:#5F9EA0;
+    	color:#fafafa;
+	}
+
+	.wrap .header .cari:hover  {
+    	background-color:#fafafa;
+    	color:#207cca;
+	}
+	.wrap .header #p {
+		text-align: right;
+		color: : white;
+		font-size: 8;
+		font-family: Segoe UI;
+
+	}
+	.wrap .content .form {
+		margin: 50px auto;
+		border-radius:50px;
+		background-color:#eaeaea;
+		border:4px #5F9EA0 outset;
+		width:270px;
+		height:310px;
+	}
+	.wrap .footer {
+		background-color:#5F9EA0;
+		height:50px;
+		position:absolute;
+		bottom:0px;
+		width:100%;
+	}
+	.wrap .footer #footer{
+		margin: 15px;
+		float: right;
+		font-family: segoe UI;
+	}
+	.wrap .footer #footer1{
+		float: left;
+		margin: 15px;
+	}
+</style>
+
