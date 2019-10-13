@@ -3,6 +3,28 @@
    		padding:0;
    		height:100%;
 	}
+	input[type=text], input[type=password] {
+        width: 65%;
+        padding: 5px;
+    }
+    input[type=Tanggal],input[type=Bulan],input[type=Tahun]{
+    	width:20%;
+    	padding: 3px;
+    }
+    input[type=submit]{
+    	position:relative;
+    	padding: 7px 16px;
+    	left:-8px;
+    	border:1px solid #A9A9A9;
+    	background-color:#5F9EA0;
+    	color:#fafafa;
+    	border-radius: 8px;
+    }
+    input[type=submit]:hover{
+    	background-color:#fafafa;
+    	color:#207cca;
+    	cursor: pointer;
+    }
 	.wrap{
 		min-height: 100%;
     	position: relative;
@@ -23,7 +45,6 @@
 		padding:10px;
    		padding-bottom:40px; 
 	}
-
 	.wrap .header #menu1{
 		margin: 5px 60px;
     	padding: 0;
@@ -96,94 +117,31 @@
     	cursor: pointer;
 	}
 	.wrap .content .form {
-		margin: 10px auto;
-		border-radius:5px;
+		margin: 50px auto;
+		border-radius:50px;
 		background-color:#eaeaea;
-		border:3px #5F9EA0 outset;
-		width:950px;
-		height: 400px;
-		float: left;
-		position: fixed;
+		border:4px #5F9EA0 outset;
+		width:500px;
+		height: 450px;
 	}
-	.wrap .content .form #judulbab{
+	.wrap .content .form #masuk{
+		font-family: Segoe UI;
+		font-size: 10px;
+		color: gray;
 		text-align: center;
-		font-size: 20px;
-		font-weight: bold; 
-		font-family: Mangal;
 	}
-	.wrap .content .form .soal{
-		margin: 10px auto;
-		background-color:transparent;
-		width:930px;
-		height: 310px;
-		text-align: justify;
-		font-family:Tahoma;
-		margin-left: 30px auto;
-		font-size: 17px
-	}
-	.wrap .content .form .next{
-		position:relative;
-    	padding: 8px 7px;
-    	right:-8px;
-    	border-radius: 5px;
-    	border:1px solid #A9A9A9;
-    	background-color:#5F9EA0;
-    	color:#fafafa;	
-    	float: right;
-    	margin: -50px 30px;
-	}
-	.wrap .content .form .next:hover{
-		background-color:#fafafa;
-    	color:#207cca;
-    	cursor: pointer;
-	}
-	.wrap .content .quiznav{
-		margin: 10px 980px;
-		border-radius:5px;
-		background-color:white;
-		border:3px #5F9EA0 outset;
-		width:300px;
-		height: 200px;
-		float: right;
-		position: fixed;
-	}
-	.wrap .content .quiznav #timer{
-		text-align: left;
-		font-size: 13px;
-		font-family: Mangal;
-		margin: 5px;
-	}
-	.wrap .content .quiznav #logonav{
-		border-radius:2px;
-		background-color:#eaeaea;
-		border:1px #eaeaea outset;
-		width:298px;
-		height: 35px;
-		float: right;
-		position: fixed;
-		margin: 0px 0px;
-		z-index: 1;
+	.wrap .content .form #masuk #masuk2{
 		text-align: center;
-		font-size: 16px ;
-		font-weight: bold; 
-		font-family:Book Antiqua;
-		color: grey;
+		font-family: Segoe UI;
+		font-size: 10px;
+		color:black;
+		text-decoration: none;
 	}
-	.wrap .content .quiznav input[type=button]{
-        margin: 8px;
-        position:relative;
-    	padding: 0px 0px;
-    	width: 40px;
-    	height: 50px;
-    	border:1px solid #A9A9A9;
-    	background-color:#5F9EA0;
-    	color:#fafafa;
-    	border-radius: 5px;	
-    }
-	.wrap .content .quiznav input[type=button]:hover{
-		background-color:#fafafa;
-    	color:#207cca;
-    	cursor: pointer;
+	.wrap .content .form #checkbox{
+		text-align: center;
+		font-family: Segoe UI;
+		font-size: 10px;
+		color: gray;
 	}
 	.wrap .footer {
 		background-color:#5F9EA0;
@@ -197,8 +155,33 @@
 		margin: 15px;
 		float: right;
 		font-family: segoe UI;
+		font-size: 13px;color: white;
+		
+	}
+	.wrap .footer #twitter, #facebook, #google{
+		float:right;
+		width:25px;
+		height:25px;
+		margin:9px;
+		text-decoration: none
 	}
 	.wrap .footer #footer1{
 		float: left;
 		margin: 15px;
+		text-decoration: none; 
+		font-family: Segoe UI;
+		font-size: 13px;
+		color: white;
+	}
+	.wrap .footer #footer1 #footer2{
+		text-decoration: none;
+		font-family: Segoe UI;
+		font-size: 13px;
+		color: white;
+	}
+	.wrap .footer #footer1 #footer3{
+		text-decoration: none;
+		font-family: Segoe UI;
+		font-size: 13px;
+		color: white;
 	}

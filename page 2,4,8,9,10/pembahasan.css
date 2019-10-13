@@ -72,10 +72,11 @@
 	.wrap .header #menu2 li ul li{
 		width: 100%;
 		height: 30px;
-		border: 1px solid;
+		border: 1px solid grey;
 		margin: 0px -20px;
-		background-color: grey;
+		background-color: white;
 		opacity: 90%;
+		border-radius: 5px;
 	}
 	.wrap .header #menu2 li a{
     	text-decoration: none;	
@@ -92,13 +93,6 @@
     	background-color:#fafafa;
     	color:#207cca;
     	cursor: pointer;
-	}
-	.wrap .header #p {
-		text-align: right;
-		color: : white;
-		font-size: 8;
-		font-family: Segoe UI;
-
 	}
 	.wrap .content .form {
 		margin: 10px auto;
@@ -202,9 +196,24 @@
 		position: fixed;
 
 	}
-	.wrap .content .nilainav .statenav{
+	.wrap .content .nilainav .tabel{
 		margin: 13px;
-		border: 1px solid;
+		border: 0px solid;
+		font-family: sans-serif;
+    	color: #444;
+    	border-collapse: collapse;
+    	width: 273px;
+    	height: 160px;
+    	font-size: 16px;
+	}
+	.wrap .content .nilainav .tabel #tabel1, #tabel3, #tabel5{
+		background-color:#CECECE;
+	}
+	.wrap .content .nilainav .tabel #tabel4, #tabel2{
+		background-color: #f5f5f5;
+	}
+	.wrap .content .nilainav .tabel #tabel1:hover, #tabel3:hover, #tabel5:hover{
+		background-color:#BADFFE;
 	}
 	.wrap .footer {
 		background-color:#5F9EA0;
@@ -218,8 +227,33 @@
 		margin: 15px;
 		float: right;
 		font-family: segoe UI;
+		font-size: 13px;color: white;
+		
+	}
+	.wrap .footer #twitter, #facebook, #google{
+		float:right;
+		width:25px;
+		height:25px;
+		margin:9px;
+		text-decoration: none
 	}
 	.wrap .footer #footer1{
 		float: left;
 		margin: 15px;
+		text-decoration: none; 
+		font-family: Segoe UI;
+		font-size: 13px;
+		color: white;
+	}
+	.wrap .footer #footer1 #footer2{
+		text-decoration: none;
+		font-family: Segoe UI;
+		font-size: 13px;
+		color: white;
+	}
+	.wrap .footer #footer1 #footer3{
+		text-decoration: none;
+		font-family: Segoe UI;
+		font-size: 13px;
+		color: white;
 	}

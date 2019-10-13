@@ -23,7 +23,6 @@
 		padding:10px;
    		padding-bottom:40px; 
 	}
-
 	.wrap .header #menu1{
 		margin: 5px 60px;
     	padding: 0;
@@ -95,71 +94,75 @@
     	color:#207cca;
     	cursor: pointer;
 	}
-	.wrap .content .form {
-		margin: 10px auto;
+	
+	.wrap .content .nilainav{
+		margin: 10px 40px;
 		border-radius:5px;
-		background-color:#eaeaea;
-		border:3px #5F9EA0 outset;
-		width:950px;
-		height: 400px;
-		float: left;
-		position: fixed;
+		background-color:#eff0eb ;
+		border:1px grey outset;
+		width:900px;
+		height: 420px;
+		z-index: 1;
 	}
-	.wrap .content .form #judulbab{
-		text-align: center;
-		font-size: 20px;
-		font-weight: bold; 
-		font-family: Mangal;
+	.wrap .content .nilainav .tabel{
+		margin: 8px;
+		border: 1px solid;
+		font-family: sans-serif;
+    	color: #444;
+    	border-collapse: collapse;
+    	width: 880px;
+    	height: 370px;
+    	font-size: 16px;
+    	font-style: italic;
 	}
-	.wrap .content .form .soal{
-		margin: 10px auto;
-		background-color:transparent;
-		width:930px;
-		height: 310px;
-		text-align: justify;
-		font-family:Tahoma;
-		margin-left: 30px auto;
-		font-size: 17px
+	.wrap .content .nilainav .tabel #tabel1, #tabel3, #tabel5, #tabel7{
+		background-color:#CECECE;
 	}
-	.wrap .content .form .next{
-		position:relative;
-    	padding: 8px 7px;
-    	right:-8px;
+	.wrap .content .nilainav .tabel #tabel4, #tabel2, #tabel6, #tabel8{
+		background-color: #eef3f0;
+	}
+	.wrap .content .nilainav .tabel #tabel1:hover, #tabel3:hover, #tabel5:hover, #tabel7:hover{
+		background-color:white;
+		color: blue;
+	}
+	.wrap .content .nilainav .tabel #tabel2:hover, #tabel6:hover, #tabel8:hover{
+		background-color:white;
+		color: blue;
+	}
+	.wrap .content .nilainav .tabel #tabel4:hover{
+		background-color:white;
+		color: blue;
+	}
+	.wrap .content #next{
+    	padding: 6px 7px;
     	border-radius: 5px;
     	border:1px solid #A9A9A9;
     	background-color:#5F9EA0;
     	color:#fafafa;	
     	float: right;
-    	margin: -50px 30px;
+    	margin: -1px 10px;
+    	z-index: 1;
 	}
-	.wrap .content .form .next:hover{
+	.wrap .content #next:hover{
 		background-color:#fafafa;
     	color:#207cca;
     	cursor: pointer;
 	}
-	.wrap .content .quiznav{
-		margin: 10px 980px;
+	.wrap .content .materinav{
 		border-radius:5px;
 		background-color:white;
 		border:3px #5F9EA0 outset;
 		width:300px;
 		height: 200px;
-		float: right;
 		position: fixed;
+		margin: -420px 1000px;
 	}
-	.wrap .content .quiznav #timer{
-		text-align: left;
-		font-size: 13px;
-		font-family: Mangal;
-		margin: 5px;
-	}
-	.wrap .content .quiznav #logonav{
-		border-radius:2px;
-		background-color:#eaeaea;
+	.wrap .content .materinav #judulmateri{
+		border-radius:2.5px;
+		background-color:#cad9d7;
 		border:1px #eaeaea outset;
-		width:298px;
+		width:299px;
 		height: 35px;
-		float: right;
 		position: fixed;
 		margin: 0px 0px;
 		z-index: 1;
@@ -169,18 +172,18 @@
 		font-family:Book Antiqua;
 		color: grey;
 	}
-	.wrap .content .quiznav input[type=button]{
-        margin: 8px;
-        position:relative;
-    	padding: 0px 0px;
-    	width: 40px;
-    	height: 50px;
-    	border:1px solid #A9A9A9;
-    	background-color:#5F9EA0;
-    	color:#fafafa;
-    	border-radius: 5px;	
-    }
-	.wrap .content .quiznav input[type=button]:hover{
+	.wrap .content .materinav #materi1, #materi2, #materi3, #materi4, #materi5{
+    	padding: 8px 7px;
+    	border-radius: 0px;
+    	border:0.5px solid #A9A9A9;
+    	background-color: white;
+    	color:black;
+    	z-index: 1;
+    	width: 300px;
+    	height: 33px;
+    	text-align: left;
+	}
+	.wrap .content .materinav #materi1:hover, #materi2:hover, #materi3:hover, #materi4:hover, #materi5:hover{
 		background-color:#fafafa;
     	color:#207cca;
     	cursor: pointer;
@@ -197,8 +200,33 @@
 		margin: 15px;
 		float: right;
 		font-family: segoe UI;
+		font-size: 13px;color: white;
+		
+	}
+	.wrap .footer #twitter, #facebook, #google{
+		float:right;
+		width:25px;
+		height:25px;
+		margin:9px;
+		text-decoration: none
 	}
 	.wrap .footer #footer1{
 		float: left;
 		margin: 15px;
+		text-decoration: none; 
+		font-family: Segoe UI;
+		font-size: 13px;
+		color: white;
+	}
+	.wrap .footer #footer1 #footer2{
+		text-decoration: none;
+		font-family: Segoe UI;
+		font-size: 13px;
+		color: white;
+	}
+	.wrap .footer #footer1 #footer3{
+		text-decoration: none;
+		font-family: Segoe UI;
+		font-size: 13px;
+		color: white;
 	}
