@@ -64,6 +64,7 @@
 	.wrap .header #menu2 li {
     	float: left;
     	text-decoration: none;
+	font-family: 'Segoe UI';
     	list-style: none;	
     	width: 10%;
     	height: 30px;
