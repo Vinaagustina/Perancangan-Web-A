@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href=edit.css>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon(1).ico">
+    <title>Akun</title>
+    <style type="text/css">
+    *{
+        margin: 0;
+    }
+    
+    .header{
+        background-color:  #5F9EA0;
+        width: 100%;
+        height: 100px;
+    }
+    body{
+        background: url(bg.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    #Daftar{
+        text-align: center;
+        color:rgb(22, 82, 105);
+        font-family: "Segoe UI";
+        font-size: 30px;
+        height: 90px;
+        padding-top: 10px;
+    }
+    .kotak{ 
+        text-align: center;
+        margin:50px auto;
+        border-radius:30px;
+        background-color: rgba(244, 247, 250, 0.795);
+        width:450px;
+        height:350px;
+        padding-bottom:0px;
+    }
+    .tombol{
+        text-align: center;
+        margin:50px auto;
+        border-radius:20px;
+        border: 10px;
+        height: 200px;
+        width: 300px;
+    }
+
+    .footer{
+        background-color:#5F9EA0;
+        height: 50px;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+    }
+    .cc {
+        float: left;
+        font-family: "Segoe UI";
+        color: white;
+        font-size: 14px;
+        padding-top: 10px;
+    }
+    .search {
+		padding:6px;
+		background: rgb(255, 255, 255);
+        border:0px;
+        margin-left: 10px;
+        }
+    .button {
+		position:relative;
+        border: 0;
+		padding:6px 15px;
+		left:-7px;
+		background-color:rgba(255, 255, 255, 0.61);
+		color:white; 
+    }
+    .header .logo{    
+        text-align: right;
+        font-family: 'Segoe UI';
+        font-size: 40px;
+        color: white;
+        
+    }
+    .menu{
+        float: right;
+        padding: 5px 70px 5px 50px;
+    }
+    .menukanan{   
+        text-decoration: none;
+        color: white;
+        font-family: 'Segoe UI';
+        font-size: 20px;
+    }
+    .kotakcari{
+        float: left;
+    }
+    .menukiri .jenjang{
+        text-decoration: none;
+        color: white;
+        font-family: 'Segoe UI';
+        font-size: 20px;
+        padding-bottom: 50px;
+    }
+    .menukiri .materi {
+        text-decoration: none;
+        color: white;
+        font-family: 'Segoe UI';
+        font-size: 20px;
+    }
+    .aboutus{
+        float: right;
+        font-family: "Segoe UI";
+        color: white;
+        font-size: 14px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+    .icon {
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    .menukiri li a {
+    	text-decoration: none;	
+	}
+	.menukiri{
+		margin: 15px auto;
+	}
+	.menukiri li {
+    	float: left;
+    	text-decoration: none;
+    	list-style: none;
+    	margin-left: 15px;
+    	margin-right: 30px;	
+    	width: 50px;
+        height: 50px;
+        
+        
+	}
+	.menukiri li:hover ul{
+		display: block;
+	}
+	.menukiri li ul{
+		display: none;
+	}
+	.menukiri li a{
+    	text-decoration: none;	
+        color:teal;
+	}
+	.menukiri li ul li{
+		width: 110px;
+		height: 30px;
+		border: 1px;
+        background: white;
+    }
+    .box1{   
+        margin: 20px 980px 20px 100px;
+		border-radius:5px;
+		background-color:white;
+		float: right;
+		position: absolute; 
+        border-radius:30px;
+        background-color: white;
+        width:300px;
+        height:450px;
+    }
+    .listmenu{
+        padding: 80px 10px 20px 10px;
+        height: 250px;
+        
+    }
+    .identitas{
+        font-family: Segoe UI;
+        color:rgb(22, 82, 105); 
+        text-align: center;
+        padding-top: 30px;
+    }
+    #profilku{
+        font-family: 'Segoe UI';
+        background-color: rgb(183, 206, 207);
+        font-size: 15px;
+        height: 30px;
+        width: 160px;
+        color:rgb(22, 82, 105);
+        border:0;
+        
+    }
+    #recent{
+        font-family: 'Segoe UI';
+        background-color: rgb(183, 206, 207);
+        font-size: 15px;
+        height: 30px;
+        width: 160px;
+        color:rgb(22, 82, 105);
+        margin-top: 20px;
+        border:0;      
+    }
+    #arsip{
+        font-family: 'Segoe UI';
+        background-color: rgb(183, 206, 207);
+        font-size: 15px;
+        color:rgb(22, 82, 105);
+        height: 30px;
+        width: 160px;
+        margin-top: 20px;
+        border:0;
+    }
+    .listmenu li{
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        }
+
+    .box2{  
+        margin: 20px 100px 20px 20px;
+        border-radius:30px;
+        background-color: white;
+        width:800px;
+        height:450px;
+        float: right;
+        
+    }
+    .judul{
+        margin: 10px 10px 10px 20px;
+    }
+    .titlemenu{
+        font-family: 'Segoe UI';
+        color: rgb(22, 82, 105);
+        font-size: 30px;
+        font-weight: bold;
+
+    }
+    .detail{
+        margin:50px 10px 10px 40px;
+        font-family: 'Segoe UI';
+        font-size: 20px;
+        color: rgb(22, 82, 105);
+    }
+    #edit {
+        margin-right: 60px;
+        float: right;
+        font-family: 'Segoe UI';
+        background-color: rgba(204, 204, 204, 0.438);
+        font-size: 15px;
+        color:rgb(22, 82, 105);
+        height: 30px;
+        width: 80px;
+        margin-top: 30px;
+        border-radius: 20px;
+        border:0;
+    }
+    #logout{
+        margin-right: 60px;
+        font-family: 'Segoe UI';
+        background-color: rgba(204, 204, 204, 0.438);
+        font-size: 15px;
+        color:rgb(22, 82, 105);
+        height: 30px;
+        width: 80px;
+        margin-top: 30px;
+        border-radius: 20px;
+        border:0;
+        margin-left: 80px;
+    }
+    
+</style>
+</head>
+
+<body>
+<div class="header">
+    <p class="logo">SMART ACADEMY</p>
+    <div class="menu">
+        <a href="index.html" class="menukanan">Home  |</a>
+        <a href="akun.html"class="menukanan">Akun  |</a>
+        <a href="#" class="menukanan">Kontak</a>
+    </div>
+    <div class="menukiri">
+		<li class="jenjang"> Jenjang
+			<ul>
+				<li><a href="#">SD</a></li>
+				<li><a href="#">SMP</a></li>
+				<li><a href="menu.html">SMA</a></li>
+			</ul>
+		</li>
+		<li class="materi"> Materi 
+			<ul>
+				<li><a href="#">Matematika</a></li>
+				<li><a href="materi.html">Biologi</a></li>
+				<li><a href="#">English</a></li>
+				<li><a href="#">IPS</a></li>
+			</ul>
+        </li>
+        <div class="kotakcari">
+            <input class="search" type="text" placeholder="Telusuri" required>	
+            <input class="button" type="button" value="Cari">		
+        </div>
+    </div>
+</div>
+<div class="wrap">
+    <td><div class="box1">
+        <div class="identitas">
+            <a><img src="user.png" style="width:60px;height:60px;"></a>
+            <p id="id"> Bambangs </p>
+            <p id="nama"> Bambang Sugiono </p>
+            <p id="id"> Bambangsugiono@gmail.com</p>
+        </div>
+        <div class="listmenu">
+            <li><button id="profilku">profilku </button></li>
+            <li><button id="recent">recent view </button></li>
+            <li><button id="arsip">arsip</button></li>
+            <button id="logout">keluar</button>
+        </div>
+    </div></td>
+
+    <td><div class="box2">
+        <div class="judul">
+            <p class="titlemenu">Profilku</p>
+        </div>
+            <div class="detail">
+                <p> Nama : Bambang Sugiono </p>
+                <br>
+                <p>Username : Bambangs</p>
+                <br>
+                <p>Tanggal Lahir : 16 Februari 1999</p>
+                <br>
+                <p> Jenjang : SMA </p>
+                <br>
+                <p> Jenis Kelamin : laki-laki </p>
+            </div>
+        <button id="edit">edit</button>
+    </div></td>
+    
+<div class="footer">
+        <a class="cc">© 2019 Smart Academy  | Ketentuan layanan | Kebijakan privasi </a>
+        <div class="icon">
+            <a><img src="twitter (1).png" style="float:right;width:30px;height: 30px;"></a>
+            <a><img src="facebook (1).png" style="float:right;width:30px;height: 30px;"></a>
+            <a><img src="google-plus (1).png" style="float:right;width:30px;height: 30px;"></a>
+        <div class="aboutus">
+            <a>About Us</a>
+        </div>
+</div>
+</body>
+</html>
