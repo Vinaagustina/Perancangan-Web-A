@@ -1,0 +1,303 @@
+	html,body {
+   		margin:0;
+   		padding:0;
+   		height:100%;
+	}
+	button[type=submit]{
+    	position:relative;
+    	padding: 7px 16px;
+    	left:-8px;
+    	border:1px solid #A9A9A9;
+    	background-color:#5F9EA0;
+    	color:#fafafa;
+    	border-radius: 8px;
+    }
+    button[type=submit]:hover{
+    	background-color:#fafafa;
+    	color:#207cca;
+    	cursor: pointer;
+    }
+	.wrap{
+		min-height: 100%;
+    	position: relative;
+	}
+	.wrap .header{
+		background-color:#5F9EA0;
+		width:100%;
+		padding:10px;
+	}
+	.wrap .header #judul{
+		color: white;
+		font-size: 40px;
+		font-family: Segoe UI;
+		margin: 5px 20px;
+		text-align: right;
+	}
+	.wrap .content{
+		padding:10px;
+   		padding-bottom:40px; 
+	}
+	.wrap .header #menu1{
+		margin: 5px 60px;
+    	padding: 0;
+	}
+	.wrap .header #menu1 li {
+    	float: right;
+    	list-style: none;
+    	margin-left: 15px;
+    	margin-right: 15px;	
+	}
+	.wrap .header #menu1 li a {
+    	text-decoration: none;
+    	color: white;
+    	font-size: 15px;
+    	font-family: Segoe UI;	
+	}
+	.wrap .header #menu2{
+		margin: 8px ;
+    	padding: 0;
+    	color: white;
+	}
+	.wrap .header #menu2:hover{
+		background-color:#fafafa;
+    	cursor: pointer;
+	}
+	.wrap .header #menu2 li {
+    	float: left;
+    	text-decoration: none;
+    	list-style: none;
+    	margin-left: 0px;
+    	margin-right: 0px;	
+    	width: 10%;
+    	height: 30px;
+    	border: 0px solid;
+    	text-align: center;
+    	z-index: 1;
+    	position: relative;
+    	font-family: Segoe UI;
+	}
+	.wrap .header #menu2 li:hover ul{
+		display: block;
+		cursor: pointer;
+
+	}
+	.wrap .header #menu2 li ul{
+		display: none;
+
+	}
+	.wrap .header #menu2 li ul li{
+		width: 100%;
+		height: 30px;
+		border: 1px solid grey;
+		margin: 0px -20px;
+		background-color: white;
+		opacity: 90%;
+		border-radius: 5px;
+	}
+	.wrap .header #menu2 li a{
+    	text-decoration: none;	
+	}
+	.wrap .header .cari {
+    	position:relative;
+    	padding: 2px 7px;
+    	left:-8px;
+    	border:1px solid #A9A9A9;
+    	background-color:#5F9EA0;
+    	color:#fafafa;
+	}
+	.wrap .header .cari:hover  {
+    	background-color:#fafafa;
+    	color:#207cca;
+    	cursor: pointer;
+	}
+	
+	.wrap .content .nilainav{
+		margin: 10px 40px;
+		border-radius:5px;
+		background-color:#eff0eb ;
+		border:1px grey outset;
+		width:900px;
+		height: 420px;
+		z-index: 1;
+	}
+	.wrap .content .nilainav .tabel{
+		margin: 8px;
+		border: 1px solid;
+		font-family: sans-serif;
+    	color: #444;
+    	border-collapse: collapse;
+    	width: 880px;
+    	height: 370px;
+    	font-size: 16px;
+    	font-style: italic;
+	}
+	.wrap .content .nilainav .tabel #tabel1, #tabel3, #tabel5, #tabel7{
+		background-color:#CECECE;
+	}
+	.wrap .content .nilainav .tabel #tabel4, #tabel2, #tabel6, #tabel8{
+		background-color: #eef3f0;
+	}
+	.wrap .content .nilainav .tabel #tabel1:hover, #tabel3:hover, #tabel5:hover, #tabel7:hover{
+		background-color:white;
+		color: blue;
+	}
+	.wrap .content .nilainav .tabel #tabel2:hover, #tabel6:hover, #tabel8:hover{
+		background-color:white;
+		color: blue;
+	}
+	.wrap .content .nilainav .tabel #tabel4:hover{
+		background-color:white;
+		color: blue;
+	}
+	.wrap .content #next{
+    	padding: 6px 7px;
+    	border-radius: 5px;
+    	border:1px solid #A9A9A9;
+    	background-color:#5F9EA0;
+    	color:#fafafa;	
+    	float: right;
+    	margin: -1px 10px;
+    	z-index: 1;
+	}
+	.wrap .content #next:hover{
+		background-color:#fafafa;
+    	color:#207cca;
+    	cursor: pointer;
+	}
+	.wrap .content .materinav{
+		border-radius:5px;
+		background-color:white;
+		border:3px #5F9EA0 outset;
+		width:300px;
+		height: 200px;
+		margin: -420px 1000px;
+	}
+	.wrap .content .materinav #judulmateri{
+		border-radius:2.5px;
+		background-color:#cad9d7;
+		border:1px #eaeaea outset;
+		width:299px;
+		height: 35px;
+		position: absolute;
+		margin: 0px 0px;
+		z-index: 1;
+		text-align: center;
+		font-size: 16px ;
+		font-weight: bold; 
+		font-family:Book Antiqua;
+		color: grey;
+	}
+	.wrap .content .materinav #materi1, #materi2, #materi3, #materi4, #materi5{
+    	padding: 8px 7px;
+    	border-radius: 0px;
+    	border:0.5px solid #A9A9A9;
+    	background-color: white;
+    	color:black;
+    	z-index: 1;
+    	width: 300px;
+    	height: 33px;
+    	text-align: left;
+	}
+	.wrap .content .materinav #materi1:hover, #materi2:hover, #materi3:hover, #materi4:hover, #materi5:hover{
+		background-color:#fafafa;
+    	color:#207cca;
+    	cursor: pointer;
+	}
+	.wrap .footer {
+		background-color:#5F9EA0;
+		height:40px;
+		position:absolute;
+		bottom:0px;
+		width:100%;
+		padding: 10px;
+	}
+	.wrap .footer #twitter, #facebook, #google{
+		float:right;
+		width:25px;
+		height:25px;
+		margin:9px;
+		text-decoration: none
+	}
+	.wrap .footer #footer{
+		margin: 15px;
+		float: right;
+		font-family: segoe UI;
+		font-size: 13px;color: white;
+		
+	}
+	.wrap .footer #footer1{
+		float: left;
+		margin: 15px;
+		text-decoration: none; 
+		font-family: Segoe UI;
+		font-size: 13px;
+		color: white;
+	}
+	.wrap .footer #footer1, #footer2, #footer3{
+		text-decoration: none;
+		font-family: Segoe UI;
+		font-size: 13px;
+		color: white;
+	}
+@media screen and (max-width: 460px){
+	.wrap{
+		min-height: 120%;
+    	position: relative;
+	}
+	.wrap .content .nilainav {
+		margin: 25px auto;
+		width:90%;
+	}
+	.wrap .content .nilainav .tabel{
+		margin: auto;
+    	width: 100%;
+    	font-size: 80%;
+	}
+	.wrap .content .materinav{
+		width:88%;
+		margin: auto;
+	}
+	.wrap .content .materinav #judulmateri{
+		width:100% auto;
+		margin: 0px 0px;
+		font-size: 80%;
+	}
+	.wrap .content .materinav #materi1, #materi2, #materi3, #materi4, #materi5{
+    	width: 100% auto;
+	}
+	.wrap .footer {
+		height:5%;
+		width:100%;
+	}
+	.wrap .footer #twitter, #facebook, #google{
+		float:none;
+		margin: auto;
+		display: none;
+	}
+	.wrap .footer #footer{
+		float: none;
+		margin: auto;
+		display: none;	
+	}
+	.wrap .header #judul{
+		font-size: 200%;
+	}
+	.wrap .header #menu2{
+		margin: 8px ;
+    	display: none;
+	}
+	.wrap .header #menu1{
+		margin: auto;
+    	padding: 0;
+	}
+	.wrap .header .kotak{
+		margin: : auto;
+		width: 20%;
+	}
+	.wrap .header .cari {
+		margin: auto;
+	}
+	.wrap .footer #footer1, #footer2, #footer3{
+		font-size: 75%;
+	}
+}
