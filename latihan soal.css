@@ -10,7 +10,7 @@
     	background-color:#5F9EA0;
     	color:#fafafa;
     	border-radius: 8px;
-    	margin: 15px 850px;
+    	margin: 15px 850px auto;
     }
     button[type=submit]:hover{
     	background-color:#fafafa;
@@ -222,8 +222,9 @@
 		margin: 15px;
 		float: right;
 		font-family: segoe UI;
-		font-size: 13px;color: white;
-		
+		font-size: 13px;
+		color: white;
+		text-decoration: none;
 	}
 	.wrap .footer #footer1{
 		float: left;
