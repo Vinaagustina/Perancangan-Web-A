@@ -3,33 +3,6 @@
    		padding:0;
    		height:100%;
 	}
-	input[type=text], input[type=password] {
-        width: 65%;
-        padding: 5px;
-    }
-    input[type=number],input[type=number],input[type=number]{
-    	width:20%;
-    	padding: 3px;
-    }
-    select{
-    	width: 34%;
-    	padding: 3px;
-    	color: grey;
-    }
-    button[type=submit]{
-    	position:relative;
-    	padding: 7px 16px;
-    	left:-8px;
-    	border:1px solid #A9A9A9;
-    	background-color:#5F9EA0;
-    	color:#fafafa;
-    	border-radius: 8px;
-    }
-    button[type=submit]:hover{
-    	background-color:#fafafa;
-    	color:#207cca;
-    	cursor: pointer;
-    }
 	.wrap{
 		min-height: 100%;
     	position: relative;
@@ -122,29 +95,23 @@
 	.wrap .content .form {
 		margin: 50px auto;
 		border-radius:50px;
-		background-color:#eaeaea;
+		background-color: rgba(244, 247, 250, 0.795);
 		border:4px #5F9EA0 outset;
-		width:500px;
-		height: 490px;
+		width:90%;
+		height: 400px;
 	}
-	.wrap .content .form #masuk{
-		font-family: Segoe UI;
-		font-size: 10px;
-		color: gray;
+	.wrap .content .form #aboutus{
 		text-align: center;
+		font-size: 22px;
+		font-family: Segoe UI;
+		margin: 20px auto;
+		font-weight: bold;
 	}
-	.wrap .content .form #masuk #masuk2{
-		text-align: center;
+	.wrap .content .form #about1, #about2, #about3{
+		font-size: 16px;
+		text-align: justify;
+		margin: 20px 30px auto;
 		font-family: Segoe UI;
-		font-size: 10px;
-		color:black;
-		text-decoration: none;
-	}
-	.wrap .content .form #checkbox{
-		text-align: center;
-		font-family: Segoe UI;
-		font-size: 10px;
-		color: gray;
 	}
 	.wrap .footer {
 		background-color:#5F9EA0;
@@ -159,7 +126,6 @@
 		font-family: segoe UI;
 		font-size: 13px;
 		color: white;
-		text-decoration: none;
 	}
 	.wrap .footer #twitter, #facebook, #google{
 		float:right;
@@ -176,7 +142,7 @@
 		font-size: 13px;
 		color: white;
 	}
-	.wrap .footer #footer1, #footer2, #footer3{
+	.wrap .footer #footer1, #footer2, #footer3, #footer{
 		text-decoration: none;
 		font-family: Segoe UI;
 		font-size: 13px;
@@ -187,6 +153,14 @@
 	.wrap .content .form {
 		margin: 25px auto;
 		width:95%;
+		height: 100%;
+	}
+	.wrap .content .form #aboutus{
+		font-size: 80%;
+	}
+	.wrap .content .form #about1, #about2, #about3{
+		font-size: 80%;
+		
 	}
 	.wrap .footer {
 		height:8%;
