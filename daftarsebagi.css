@@ -1,24 +1,25 @@
 *{
     margin: 0;
 }
+
 .header{
     background-color:  #5F9EA0;
     width: 100%;
     height: 100px;
 }
 body{
-    background: url(bg\ 3.jpg);
+    background: url(bg.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-#spanduk{
+#Daftar{
     text-align: center;
     color:rgb(22, 82, 105);
-    font-family: "Ink Free";
-    font-weight: bold;
-    font-size: 32px;
+    font-family: "Segoe UI";
+    font-size: 30px;
     height: 90px;
+    padding-top: 10px;
 }
 .kotak{ 
     text-align: center;
@@ -26,26 +27,23 @@ body{
     border-radius:30px;
     background-color: rgba(244, 247, 250, 0.795);
     width:450px;
-    height:320px;
+    height:350px;
     padding-bottom:0px;
 }
 .tombol{
     text-align: center;
-    margin:50px auto;
+    margin:20px auto;
     border-radius:20px;
-    border: 10px;
     height: 200px;
     width: 300px;
 }
 
 .footer{
     background-color:#5F9EA0;
-    height: 40px;
-    margin: 0;
+    height: 50px;
     position: fixed;
     bottom: 0px;
     width: 100%;
-    padding: 10px;
 }
 .cc {
     float: left;
@@ -59,8 +57,8 @@ body{
     padding:6px;
     background: rgb(255, 255, 255);
     border:0px;
-    width: 100px;
     margin-left: 10px;
+    width: 100px;
     }
 .button {
     position:relative;
@@ -74,11 +72,19 @@ body{
     text-align: right;
     font-family: 'Segoe UI';
     font-size: 40px;
-    color: white;     
+    color: white;
+    
 }
 .menu{
     float: right;
     padding: 5px 70px 5px 50px;
+}
+.menukanan{   
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    padding: 10px;
 }
 .menukanan{   
     text-decoration: none;
@@ -98,6 +104,7 @@ body{
     color: white;
     font-family: 'Segoe UI';
     font-size: 20px;
+    padding-bottom: 50px;
 }
 .menukiri .materi {
     text-decoration: none;
@@ -105,25 +112,32 @@ body{
     font-family: 'Segoe UI';
     font-size: 20px;
 }
-.daftar, .masuk {
+.guru {
     background-color: rgba(129, 168, 192, 0.788);
-    width: 100px;
+    width: 170px;
     height: 50px;
     border: honeydew;
     border-radius: 20px;
-    text-decoration: none;
     font-size: 20px;
     font-family: "Segoe UI";
     color:white;
+    margin: 10px 20px 30px 20px;
 }
-#daftar, #masuk{
-    text-decoration: none;
+.siswa {
+    background-color: rgba(129, 168, 192, 0.788);
+    width: 170px;
+    height: 50px;
+    border: honeydew;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: "Segoe UI";
+    color:white;
+    margin: 0px 20px 40px 20px;
 }
-.daftar:hover, .masuk:hover{
+.guru:hover, .siswa:hover{
     background-color:white;
     color: #5F9EA0;
     cursor: pointer;
-    
 }
 .aboutus a{
     float: right;
@@ -134,12 +148,9 @@ body{
     padding-top: 10px;
     text-decoration: none;
 }
-#lupa{
-    text-decoration: none;
-    color: gray;
-    font-family: "Segoe UI";
-    font-size: 12px;
-    
+.icon {
+    padding-right: 10px;
+    padding-top: 10px;
 }
 .menukiri li a {
     text-decoration: none;	
@@ -172,9 +183,9 @@ body{
     height: 30px;
     border: 1px;
     background: white;
-}   
+}
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 480px) {
     .wrapper{
         width: 100%;
     }
@@ -196,10 +207,8 @@ body{
     }
     .footer{
         width: 100%;
-        bottom: 0;
-        padding: 0;
         
-    }    
+    }   
     .menukiri .jenjang{
         display: none;
     }
@@ -210,25 +219,29 @@ body{
 
     .search {
         width: 20%;
-        margin: auto;
+        margin: 0;
         }
     .button {
-        margin: auto;}
-
-    .kotak{
-        width: 70%;
-        margin: 20% auto;
-    }
-
-    .tombol{
-        width: 60%;
-        margin: auto;
-    }
+        width: 20%;}
+    
     .icon{
         display: none;
     }
-    #spanduk p{
+    .kotak{
+        width: 60%;
+    }
+    #Daftar p{
         font-size: 80%;
+    }
+    .tombol{
+        margin: auto;
+        width: 100%;
+    }
+    .guru,.siswa{
+        width: 40%;
+    }
+    #garis{
+        display: none;
     }
     .cc{
         font-size: 80%;
