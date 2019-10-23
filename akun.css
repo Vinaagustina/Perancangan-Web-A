@@ -236,7 +236,7 @@ body{
     color: rgb(22, 82, 105);
 }
 #edit {
-    margin: 20px 30px 60px 20px;
+    margin-right: 10px;
     float: right;
     font-family: 'Segoe UI';
     background-color: rgba(204, 204, 204, 0.438);
@@ -325,23 +325,25 @@ body{
         font-size: 80%;
     }
     .container1{
-        width: 100%;
+        width: 80%;
         float: left;
         padding: auto;
+        margin-left: 10%;
        
     }
     .container2{
-        width: 100%;
+        width: 80%;
         margin: auto;
         float: right;
         padding: auto;
         margin-top: 10%;
+        margin-right: 10%;
     }
     .detail{
         font-size: 80%;
     }
     #edit{
-        margin: auto;
+        margin-right: 10%;
         font-size: 80%;
         width: 20%;
     }

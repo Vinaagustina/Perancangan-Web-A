@@ -325,16 +325,14 @@ body{
         font-size: 80%;
     }
     .container1{
-        width: 100%;
-        margin: auto;
-        float: left;
-        padding: auto;
+        width: 80%;
+        margin: 10% auto;
+        margin-left: 10%;
     }
     .container2{
-        width: 100%;
-        margin: auto;
-        float: right;
+        width: 80%;
+        margin: 10% auto;
         padding: auto;
-        margin-top: 10%;
+        margin-right: 10%;
     }
 }
