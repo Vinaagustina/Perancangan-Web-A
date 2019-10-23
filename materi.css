@@ -28,12 +28,13 @@ body{
     background-color: rgba(244, 247, 250, 0.795);
     width:450px;
     height:350px;
-    padding-bottom:0px;
+
 }
 .tombol{
     text-align: center;
-    margin:20px auto;
+    margin:50px auto;
     border-radius:20px;
+    border: 10px;
     height: 200px;
     width: 300px;
 }
@@ -79,13 +80,7 @@ body{
     float: right;
     padding: 5px 70px 5px 50px;
 }
-.menukanan{   
-    text-decoration: none;
-    color: white;
-    font-family: 'Segoe UI';
-    font-size: 20px;
-    padding: 10px;
-}
+
 .menukanan{   
     text-decoration: none;
     color: white;
@@ -111,33 +106,6 @@ body{
     color: white;
     font-family: 'Segoe UI';
     font-size: 20px;
-}
-.guru {
-    background-color: rgba(129, 168, 192, 0.788);
-    width: 170px;
-    height: 50px;
-    border: honeydew;
-    border-radius: 20px;
-    font-size: 20px;
-    font-family: "Segoe UI";
-    color:white;
-    margin: 10px 20px 30px 20px;
-}
-.siswa {
-    background-color: rgba(129, 168, 192, 0.788);
-    width: 170px;
-    height: 50px;
-    border: honeydew;
-    border-radius: 20px;
-    font-size: 20px;
-    font-family: "Segoe UI";
-    color:white;
-    margin: 0px 20px 40px 20px;
-}
-.guru:hover, .siswa:hover{
-    background-color:white;
-    color: #5F9EA0;
-    cursor: pointer;
 }
 .aboutus a{
     float: right;
@@ -184,8 +152,103 @@ body{
     border: 1px;
     background: white;
 }
+.box1{   
+    margin: 20px 980px 80px 60px;
+    border-radius:5px;
+    background-color:white;
+    float: right;
+    position: absolute; 
+    border-radius:30px;
+    background-color: white;
+    width:400px;
+    height:450px;
+}
+.mapel{
+    margin: 10px 20px 20px 20px;
+}
+.kelas{
+    margin: 30px 10px 20px 20px;
+    font-family: 'Segoe UI';
+    color: rgb(22, 82, 105);
+}
+.kelas ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI';
+    color: rgb(22, 82, 105);
+}
+#bio{
+    font-family: 'Segoe UI';
+    color: rgb(22, 82, 105);
+    font-size: 20px;
+    font-weight: bold;
+}
 
-@media screen and (max-width: 480px) {
+.box2{  
+    margin: 20px 50px 80px 20px;
+    border-radius:30px;
+    background-color: white;
+    width:800px;
+    height:450px;
+    float: right;   
+}
+.judulmateri{
+    margin: 20px 20px 20px 20px;
+    font-family: 'Segoe UI';
+    color: rgb(22, 82, 105);
+    font-weight: bold;
+    font-size: 20px;;
+
+}
+.isi{
+    margin: 40px 20px 20px 30px;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    color: rgb(22, 82, 105);
+}
+nav {
+    margin:auto;
+    text-align: center;
+    width: 100%;
+    }
+nav ul {
+    background:white;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    width: 90%;
+ }
+ nav ul li{
+    float:left;
+    padding:10px 10px 10px 10px;
+}
+
+nav ul li:hover{
+    background:#d68d9a;
+}
+
+nav ul li:hover a{
+    color:rgb(22, 82, 105);}
+
+nav ul li a{
+    display: block;
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+} 
+.latihan{
+    margin: 150px 670px;
+
+}   
+#lat {
+    text-decoration: none;
+    width: 80px;
+    border: none;
+}
+#lat:hover{
+    background-color: lavender;
+}
+
+@media screen and (max-width: 480px){
     .wrapper{
         width: 100%;
     }
@@ -198,16 +261,15 @@ body{
         font-size: 200%;
 
     }
-    .menu{
-        float: right;
-        padding: 0;
-    }
     .menukanan{
-        padding-left: 3px;
+        font-size: 80%;
+        padding: 0;
+        margin: auto; 
     }
     .footer{
         width: 100%;
         position: relative;
+        
     }   
     .menukiri .jenjang{
         display: none;
@@ -227,23 +289,41 @@ body{
     .icon{
         display: none;
     }
-    .kotak{
-        width: 60%;
-    }
-    #Daftar p{
-        font-size: 80%;
-    }
-    .tombol{
-        margin: auto;
-        width: 100%;
-    }
-    .guru,.siswa{
-        width: 40%;
-    }
-    #garis{
-        display: none;
-    }
     .cc{
         font-size: 80%;
     }
+    .box1{
+        width: 70%;
+        font-size: 50%;
+        margin: auto;
+        height: 40%;
+    }
+    .box2{
+        width: 90%;
+        margin: auto;
+        margin-top:80%;
+        float: left;
+        height: 60% auto;
+    }
+    .isi{
+        font-size: 50%;
+    }
+    .latihan{
+        margin: auto;
+        float: right;
+    }
+    #lat{
+        font-size: 60%;
+    }
+    .kelas nav ul{
+        width: 80% ;
+        margin: auto;
+        height: auto;
+        padding: 0;
+    }
+    .kelas nav ul li{
+        padding: 0;
+    }
+    
+
 }

@@ -32,8 +32,9 @@ body{
 }
 .tombol{
     text-align: center;
-    margin:20px auto;
+    margin:50px auto;
     border-radius:20px;
+    border: 10px;
     height: 200px;
     width: 300px;
 }
@@ -86,13 +87,6 @@ body{
     font-size: 20px;
     padding: 10px;
 }
-.menukanan{   
-    text-decoration: none;
-    color: white;
-    font-family: 'Segoe UI';
-    font-size: 20px;
-    padding: 10px;
-}
 .menukanan:hover{
     color: teal;
 }
@@ -111,33 +105,6 @@ body{
     color: white;
     font-family: 'Segoe UI';
     font-size: 20px;
-}
-.guru {
-    background-color: rgba(129, 168, 192, 0.788);
-    width: 170px;
-    height: 50px;
-    border: honeydew;
-    border-radius: 20px;
-    font-size: 20px;
-    font-family: "Segoe UI";
-    color:white;
-    margin: 10px 20px 30px 20px;
-}
-.siswa {
-    background-color: rgba(129, 168, 192, 0.788);
-    width: 170px;
-    height: 50px;
-    border: honeydew;
-    border-radius: 20px;
-    font-size: 20px;
-    font-family: "Segoe UI";
-    color:white;
-    margin: 0px 20px 40px 20px;
-}
-.guru:hover, .siswa:hover{
-    background-color:white;
-    color: #5F9EA0;
-    cursor: pointer;
 }
 .aboutus a{
     float: right;
@@ -184,6 +151,57 @@ body{
     border: 1px;
     background: white;
 }
+.tataletak {
+    padding: 30px 300px 30px 300px;
+}
+.pilihanmenu {
+    font-family: 'Segoe UI'; 
+    padding-left: 15px;
+    padding-right: 10px;
+    }
+
+td {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    text-align: center;
+}
+td:hover{
+    background-color: rgb(183, 206, 207);
+}
+.input{
+    width: 200px;
+    height: 30px;
+    text-align:left;
+    padding-left: 10px;
+    border:0;
+    font-family: Segoe UI;
+    
+}
+.letakinput{
+    padding-left: 200px;
+    padding-bottom: 10px;
+}
+.box{
+    padding: 0px 50px 50px 50px;
+}
+.nextback{
+    padding: 20px 20px 0px 20px;
+    }
+#back{
+    float: left;
+    font-family: 'Segoe UI';
+    background-color: rgb(183, 206, 207);
+    font-size: 15px;
+    color:rgb(22, 82, 105);
+}
+#next{
+    float: right;
+    font-family: 'Segoe UI';
+    background-color: rgb(183, 206, 207);
+    font-size: 15px;
+    color:rgb(22, 82, 105);
+    }
 
 @media screen and (max-width: 480px) {
     .wrapper{
@@ -192,23 +210,15 @@ body{
     .header {
         width: 100%;
         padding: 0;
-
     }
     .header .logo{
         font-size: 200%;
-
-    }
-    .menu{
-        float: right;
-        padding: 0;
-    }
-    .menukanan{
-        padding-left: 3px;
     }
     .footer{
         width: 100%;
+        bottom: 0;
         position: relative;
-    }   
+    }        
     .menukiri .jenjang{
         display: none;
     }
@@ -216,6 +226,13 @@ body{
     .menukiri .materi {
         display: none;
         }
+    .menu{
+        float: right;
+        padding: 0;
+    }
+    .menukanan{
+        padding-left: 3px;
+    }
 
     .search {
         width: 20%;
@@ -227,23 +244,62 @@ body{
     .icon{
         display: none;
     }
-    .kotak{
+    .input{
+        width: 100%;
+
+    }
+    .table{
+        width: 100%;
+        margin: auto;
+    }
+    .input{
+        width: 70%;
+        float: none;
+        margin: 10% auto;
+        padding: auto;
+        margin-left: 15%;
+    }
+    .letakinput{
+        padding: 0;
+        margin: 0px;
+    }
+    .tataletak{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .box{
         width: 60%;
     }
-    #Daftar p{
-        font-size: 80%;
-    }
-    .tombol{
-        margin: auto;
+    td{
+        list-style: none;
+        display: block;
         width: 100%;
+        padding: 10px auto;
+        margin: 10%;
+        border-left: 0;
     }
-    .guru,.siswa{
+    img{
         width: 40%;
     }
-    #garis{
-        display: none;
+    tr{
+        float: left;
+        width: 50%;
     }
-    .cc{
-        font-size: 80%;
+    .nextback{
+        margin: 30px auto;
     }
+    #back ,#next{
+        width: 50%;
+        font-size: 70%;
+        margin: 10% auto;
+       
+        
+    }
+    .baris{
+        margin:0;
+        width: 100%;
+        border: 0;
+    }
+
 }
