@@ -243,6 +243,7 @@ nav ul li a{
     text-decoration: none;
     width: 80px;
     border: none;
+    border-radius: 5px;
 }
 #lat:hover{
     background-color: lavender;
@@ -292,18 +293,20 @@ nav ul li a{
     .cc{
         font-size: 80%;
     }
+    .container1{
+        width: 100%;
+    }
     .box1{
-        width: 70%;
+        width: 60%;
         font-size: 50%;
-        margin: auto;
+        margin: 10% auto;
         height: 40%;
+        float: none;
+        margin-left: 15%;
     }
     .box2{
-        width: 90%;
-        margin: auto;
-        margin-top:80%;
-        float: left;
-        height: 60% auto;
+        width: 80%;
+        margin-top:90%;
     }
     .isi{
         font-size: 50%;
@@ -311,6 +314,7 @@ nav ul li a{
     .latihan{
         margin: auto;
         float: right;
+        margin-right: 10% ;
     }
     #lat{
         font-size: 60%;
