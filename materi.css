@@ -42,7 +42,7 @@ body{
 .footer{
     background-color:#5F9EA0;
     height: 50px;
-    position: fixed;
+    position: absolute;
     bottom: 0px;
     width: 100%;
 }

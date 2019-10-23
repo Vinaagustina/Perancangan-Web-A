@@ -42,7 +42,7 @@ body{
     background-color:#5F9EA0;
     height: 40px;
     margin: 0;
-    position: fixed;
+    position: absolute;
     bottom: 0px;
     width: 100%;
     padding: 10px;
