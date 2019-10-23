@@ -300,7 +300,7 @@ body{
         margin: auto; 
     }
     .footer{
-        position: relative;
+        width: 100%;
         
     }   
     .menukiri .jenjang{

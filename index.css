@@ -41,8 +41,9 @@ body{
 .footer{
     background-color:#5F9EA0;
     height: 40px;
-    position: absolute;
-    bottom: 0px;
+    position: fixed;
+    margin: 0;
+    bottom: 0;
     width: 100%;
     padding: 10px;
 
@@ -198,7 +199,7 @@ body{
         width: 100%;
         bottom: 0;
         padding: 0;
-        position: relative;
+        
         
     }    
     .menukiri .jenjang{

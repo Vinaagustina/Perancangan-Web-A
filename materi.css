@@ -42,7 +42,7 @@ body{
 .footer{
     background-color:#5F9EA0;
     height: 50px;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     width: 100%;
 }
@@ -268,7 +268,7 @@ nav ul li a{
     }
     .footer{
         width: 100%;
-        position: relative;
+        
         
     }   
     .menukiri .jenjang{
