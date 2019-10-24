@@ -91,7 +91,8 @@
 		border-radius: 5px;
 	}
 	.wrap .header #menu2 li a{
-    	text-decoration: none;	
+    	text-decoration: none;
+    	color: teal;	
 	}
 	.wrap .header .cari {
     	position:relative;
@@ -132,24 +133,6 @@
 		margin-left: 30px auto;
 		font-size: 17px
 	}
-	/*.wrap .content .form .next{
-		position:relative;
-    	padding: 8px 7px;
-    	right:-8px;
-    	border-radius: 5px;
-    	border:1px solid #A9A9A9;
-    	background-color:#5F9EA0;
-    	color:#fafafa;	
-    	float: right;
-    	margin: -50px 830px;
-    	text-decoration: none;
-    	color: black;
-	}
-	.wrap .content .form .next:hover{
-		background-color:#fafafa;
-    	color:#207cca;
-    	cursor: pointer;
-	}*/
 	.wrap .content .quiznav{
 		margin: -410px 50px;
 		border-radius:5px;
