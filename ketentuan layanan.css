@@ -77,7 +77,8 @@
 		border-radius: 5px;
 	}
 	.wrap .header #menu2 li a{
-    	text-decoration: none;	
+    	text-decoration: none;
+    	color: teal;	
 	}
 	.wrap .header .cari {
     	position:relative;
