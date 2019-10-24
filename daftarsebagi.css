@@ -53,15 +53,6 @@ body{
     padding-top: 10px;
     text-decoration: none;
 }
-/* --------- */
-.search {
-    position:relative;
-    padding: 2px 7px;
-    left:-8px;
-    border:1px solid #A9A9A9;
-    background-color:white;
-    color:#fafafa
-    }
 .button {
     position:relative;
     border: 0;
@@ -76,7 +67,7 @@ body{
     color:#207cca;
     cursor: pointer;
 }
-/* ------- */
+
 .header .logo{    
     text-align: right;
     font-family: 'Segoe UI';
