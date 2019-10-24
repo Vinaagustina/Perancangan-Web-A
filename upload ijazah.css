@@ -58,7 +58,7 @@
 		padding: 0;
 		color: white;
 	}
-	.wrap .header #menu2:hover{
+	.wrap .header #menu2 :hover{
 		background-color:#fafafa;
     	cursor: pointer;
 	}
@@ -215,7 +215,7 @@
     	padding: 0;
 	}
 	.wrap .header .kotak{
-		margin: : auto;
+		margin:  auto;
 		width: 20%;
 	}
 	.wrap .header .cari {

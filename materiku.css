@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+}
+
+.header{
+    background-color:  #5F9EA0;
+    width: 100%;
+    height: 100px;
+}
+body{
+    background: url(bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#Daftar{
+    text-align: center;
+    color:rgb(22, 82, 105);
+    font-family: "Segoe UI";
+    font-size: 30px;
+    height: 90px;
+    padding-top: 10px;
+}
+.kotak{ 
+    text-align: center;
+    margin:50px auto;
+    border-radius:30px;
+    background-color: rgba(244, 247, 250, 0.795);
+    width:450px;
+    height:350px;
+    padding-bottom:0px;
+}
+.tombol{
+    text-align: center;
+    margin:50px auto;
+    border-radius:20px;
+    border: 10px;
+    height: 200px;
+    width: 300px;
+}
+
+.footer{
+    background-color:#5F9EA0;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+.cc {
+    float: left;
+    font-family: "Segoe UI";
+    color: white;
+    font-size: 14px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+.search {
+    position:relative;
+    padding: 2px 7px;
+    left:-8px;
+    border:1px solid #A9A9A9;
+    background-color:white;
+    color:#fafafa
+    }
+.button {
+    position:relative;
+    border: 0;
+    padding:2px 7px;
+    left:-14px;
+    background-color:#5F9EA0;
+    border:1px solid #A9A9A9;
+    color:white; 
+}
+.button:hover  {
+    background-color:#fafafa;
+    color:#207cca;
+    cursor: pointer;
+}
+.header .logo{    
+    text-align: right;
+    font-family: 'Segoe UI';
+    font-size: 40px;
+    color: white;
+    
+}
+.menu{
+    float: right;
+    padding: 5px 70px 5px 50px;
+}
+.menukanan{   
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    padding: 10px;
+}
+.menukanan:hover{
+    color: teal;
+}
+.kotakcari{
+    float: left;
+}
+.menukiri .jenjang{
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+.menukiri .materi {
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+}
+.aboutus a{
+    float: right;
+    font-family: "Segoe UI";
+    color: white;
+    font-size: 14px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+.icon {
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.menukiri li a {
+    text-decoration: none;	
+}
+.menukiri{
+    margin: 8px ;
+    padding: 0;
+    color: white;
+}
+.menukiri:hover{
+    background-color:#fafafa;
+    cursor: pointer;
+}
+.menukiri li {
+    float: left;
+    text-decoration: none;
+    list-style: none;
+    width: 10%;
+    height: 30px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    font-family: Segoe UI; 
+    font-size: 15px;
+}
+.menukiri li:hover ul{
+    display: block;
+}
+.menukiri li ul{
+    display: none;
+}
+.menukiri li a{
+    text-decoration: none;	
+    color:teal;
+}
+.menukiri li ul li{
+    width: 100%;
+    height: 30px;
+    border: 1px solid grey;
+    margin: 0px -20px;
+    background-color: white;
+    opacity: 90%;
+    border-radius: 5px;
+    }
+.menukiri li a{
+    text-decoration: none;	
+    } 
+.container1{   
+    margin: 20px -70px;
+    border-radius:5px;
+    background-color:white;
+    float: left;
+    border-radius:30px;
+    background-color: white;
+    width:300px;
+    height:450px;
+}
+.listmenu{
+    padding: 50px 10px 20px 10px;
+    height: 250px;
+    
+}
+.identitas{
+    font-family: Segoe UI;
+    color:rgb(22, 82, 105); 
+    text-align: center;
+    padding-top: 30px;
+}
+#profilku{
+    font-family: 'Segoe UI';
+    background-color: rgb(183, 206, 207);
+    font-size: 15px;
+    height: 30px;
+    width: 160px;
+    color:rgb(22, 82, 105);
+    border:0;
+}
+#recent{
+    font-family: 'Segoe UI';
+    background-color: rgb(183, 206, 207);
+    font-size: 15px;
+    height: 30px;
+    width: 160px;
+    color:rgb(22, 82, 105);
+    margin-top: 20px;
+    border:0;      
+}
+#arsip{
+    font-family: 'Segoe UI';
+    background-color: rgb(183, 206, 207);
+    font-size: 15px;
+    color:rgb(22, 82, 105);
+    height: 30px;
+    width: 160px;
+    margin-top: 20px;
+    border:0;
+}
+#profilku:hover, #recent:hover, #arsip:hover{
+    background-color: whitesmoke;
+}
+.listmenu li{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    }
+
+.container2{  
+    margin: 20px 90px;
+    border-radius:30px;
+    background-color: white;
+    width:800px;
+    height:450px;
+    float: right;    
+}
+.judul{
+    margin: 10px 10px 10px 20px;
+}
+.titlemenu{
+    font-family: 'Segoe UI';
+    color: rgb(22, 82, 105);
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.detail{
+    margin:50px 10px 10px 40px;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    color: rgb(22, 82, 105);
+}
+.tabel1, .tabel2, .tabel3{
+    margin: 20px 35px;
+    border: 1px solid;
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 700px;
+    height: 50px;
+    font-size: 14px;
+    font-style: italic;
+}
+#tabel1, #tabel2, #tabel3, #tabel7{
+    background-color: rgb(183, 206, 207);
+}
+#tabel1 td a, #tabel2 td a, #tabel3 td a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #444;
+
+}
+#tabel1:hover, #tabel2:hover, #tabel3:hover{
+    background-color:white;
+    color: blue;
+}
+#edit{
+    margin: 10px; 
+    float: right;
+    font-family: 'Segoe UI';
+    background-color: rgba(204, 204, 204, 0.438);
+    font-size: 15px;
+    color:rgb(22, 82, 105);
+    height: 30px;
+    width: 80px;
+    border-radius: 20px;
+    border:0;
+}
+#tambah{
+    margin: 10px;
+    float: right;
+    font-family: 'Segoe UI';
+    background-color: rgba(130, 163, 207, 0.438);
+    font-size: 15px;
+    color:rgb(22, 82, 105);
+    height: 30px;
+    width: 80px;
+    border-radius: 20px;
+    border:0;
+}
+#edit:hover, #logout:hover ,#tambah:hover{
+    background-color: rgb(183, 206, 207);
+    color: teal;
+}
+#logout{
+    margin: 20px 100px;
+    font-family: 'Segoe UI';
+    background-color: rgba(204, 204, 204, 0.438);
+    font-size: 15px;
+    color:rgb(22, 82, 105);
+    height: 30px;
+    width: 80px;
+    border-radius: 20px;
+    border:0;
+}
+@media screen and (max-width: 1024px) {
+    .wrapper{
+        width: 100%;
+    }
+    .container1{
+        width: 100%; 
+        float:none;
+        margin: 20px auto;
+        float: left;
+    }
+    .container2{
+        width: 100%;
+        float:none;
+        margin: auto;
+        float: right;
+        
+    }
+
+}
+@media screen and (max-width: 480px){
+    .wrapper{
+        width: 100%;
+    }
+    .header {
+        width: 100%;
+        padding: 0;
+
+    }
+    .header .logo{
+        font-size: 200%;
+
+    }
+    .menukanan{
+        font-size: 80%;
+        padding: 0;
+        margin: auto; 
+    }
+    .footer{
+        width: 100%;
+        
+    }   
+    .menukiri .jenjang{
+        display: none;
+    }
+
+    .menukiri .materi {
+        display: none;
+        }
+
+    .search {
+        width: 20%;
+        margin: 0;
+        }
+    .button {
+        width: 20%;}
+    
+    .icon{
+        display: none;
+    }
+    .cc{
+        font-size: 80%;
+    }
+    .container1{
+        width: 80%;
+        float: left;
+        padding: auto;
+        margin-left: 10%;
+       
+    }
+    .container2{
+        width: 80%;
+        margin: auto;
+        float: right;
+        padding: auto;
+        margin-top: 10%;
+        margin-right: 10%;
+    }
+    .detail{
+        font-size: 80%;
+    }
+    .judul .titlearsip{
+        font-size: 150%;
+        text-align: center;
+    }
+    .arsip .tabel1, .tabel2, .tabel3{
+        margin: auto;
+        width: 80%;
+        font-size: 80%;
+    }
+}
