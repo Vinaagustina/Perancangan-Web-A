@@ -1,24 +1,25 @@
 *{
     margin: 0;
 }
+
 .header{
     background-color:  #5F9EA0;
     width: 100%;
     height: 100px;
 }
 body{
-    background: url(bg\ 3.jpg);
+    background: url(bg.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-#spanduk{
+#Daftar{
     text-align: center;
     color:rgb(22, 82, 105);
-    font-family: "Ink Free";
-    font-weight: bold;
-    font-size: 32px;
+    font-family: "Segoe UI";
+    font-size: 30px;
     height: 90px;
+    padding-top: 10px;
 }
 .kotak{ 
     text-align: center;
@@ -26,8 +27,8 @@ body{
     border-radius:30px;
     background-color: rgba(244, 247, 250, 0.795);
     width:450px;
-    height:320px;
-    padding-bottom:0px;
+    height:350px;
+
 }
 .tombol{
     text-align: center;
@@ -40,13 +41,10 @@ body{
 
 .footer{
     background-color:#5F9EA0;
-    height: 40px;
+    height: 50px;
     position: fixed;
-    margin: 0;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
-    padding: 10px;
-
 }
 .cc {
     float: left;
@@ -60,8 +58,8 @@ body{
     padding:6px;
     background: rgb(255, 255, 255);
     border:0px;
-    width: 100px;
     margin-left: 10px;
+    width: 100px;
     }
 .button {
     position:relative;
@@ -75,12 +73,14 @@ body{
     text-align: right;
     font-family: 'Segoe UI';
     font-size: 40px;
-    color: white;     
+    color: white;
+    
 }
 .menu{
     float: right;
     padding: 5px 70px 5px 50px;
 }
+
 .menukanan{   
     text-decoration: none;
     color: white;
@@ -99,32 +99,13 @@ body{
     color: white;
     font-family: 'Segoe UI';
     font-size: 20px;
+    padding-bottom: 50px;
 }
 .menukiri .materi {
     text-decoration: none;
     color: white;
     font-family: 'Segoe UI';
     font-size: 20px;
-}
-.daftar, .masuk {
-    background-color: rgba(129, 168, 192, 0.788);
-    width: 100px;
-    height: 50px;
-    border: honeydew;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: "Segoe UI";
-    color:white;
-}
-#daftar, #masuk{
-    text-decoration: none;
-}
-.daftar:hover, .masuk:hover{
-    background-color:white;
-    color: #5F9EA0;
-    cursor: pointer;
-    
 }
 .aboutus a{
     float: right;
@@ -135,12 +116,9 @@ body{
     padding-top: 10px;
     text-decoration: none;
 }
-#lupa{
-    text-decoration: none;
-    color: gray;
-    font-family: "Segoe UI";
-    font-size: 12px;
-    
+.icon {
+    padding-right: 10px;
+    padding-top: 10px;
 }
 .menukiri li a {
     text-decoration: none;	
@@ -173,9 +151,105 @@ body{
     height: 30px;
     border: 1px;
     background: white;
-}   
+}
+.box1{   
+    margin: 20px 980px 80px 60px;
+    border-radius:5px;
+    background-color:white;
+    float: right;
+    position: absolute; 
+    border-radius:30px;
+    background-color: white;
+    width:400px;
+    height:450px;
+}
+.mapel{
+    margin: 10px 20px 20px 20px;
+}
+.kelas{
+    margin: 30px 10px 20px 20px;
+    font-family: 'Segoe UI';
+    color: rgb(22, 82, 105);
+}
+.kelas ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI';
+    color: rgb(22, 82, 105);
+}
+#bio{
+    font-family: 'Segoe UI';
+    color: rgb(22, 82, 105);
+    font-size: 20px;
+    font-weight: bold;
+}
 
-@media screen and (max-width: 460px) {
+.box2{  
+    margin: 20px 50px 80px 20px;
+    border-radius:30px;
+    background-color: white;
+    width:800px;
+    height:450px;
+    float: right;   
+}
+.judulmateri{
+    margin: 20px 20px 20px 20px;
+    font-family: 'Segoe UI';
+    color: rgb(22, 82, 105);
+    font-weight: bold;
+    font-size: 20px;;
+
+}
+.isi{
+    margin: 40px 20px 20px 30px;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    color: rgb(22, 82, 105);
+}
+nav {
+    margin:auto;
+    text-align: center;
+    width: 100%;
+    }
+nav ul {
+    background:white;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    width: 90%;
+ }
+ nav ul li{
+    float:left;
+    padding:10px 10px 10px 10px;
+}
+
+nav ul li:hover{
+    background:#d68d9a;
+}
+
+nav ul li:hover a{
+    color:rgb(22, 82, 105);}
+
+nav ul li a{
+    display: block;
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+} 
+.latihan{
+    margin: 150px 670px;
+
+}   
+#lat {
+    text-decoration: none;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+}
+#lat:hover{
+    background-color: lavender;
+}
+
+@media screen and (max-width: 480px){
     .wrapper{
         width: 100%;
     }
@@ -188,20 +262,16 @@ body{
         font-size: 200%;
 
     }
-    .menu{
-        float: right;
-        padding: 0;
-    }
     .menukanan{
-        padding-left: 3px;
+        font-size: 80%;
+        padding: 0;
+        margin: auto; 
     }
     .footer{
         width: 100%;
-        bottom: 0;
-        padding: 0;
         
         
-    }    
+    }   
     .menukiri .jenjang{
         display: none;
     }
@@ -212,27 +282,52 @@ body{
 
     .search {
         width: 20%;
-        margin: auto;
+        margin: 0;
         }
     .button {
-        margin: auto;}
-
-    .kotak{
-        width: 70%;
-        margin: 20% auto;
-    }
-
-    .tombol{
-        width: 60%;
-        margin: auto;
-    }
+        width: 20%;}
+    
     .icon{
         display: none;
-    }
-    #spanduk p{
-        font-size: 80%;
     }
     .cc{
         font-size: 80%;
     }
+    .container1{
+        width: 100%;
+    }
+    .box1{
+        width: 60%;
+        font-size: 50%;
+        margin: 10% auto;
+        height: 40%;
+        float: none;
+        margin-left: 15%;
+    }
+    .box2{
+        width: 80%;
+        margin-top:90%;
+    }
+    .isi{
+        font-size: 50%;
+    }
+    .latihan{
+        margin: auto;
+        float: right;
+        margin-right: 10% ;
+    }
+    #lat{
+        font-size: 60%;
+    }
+    .kelas nav ul{
+        width: 80% ;
+        margin: auto;
+        height: auto;
+        padding: 0;
+    }
+    .kelas nav ul li{
+        padding: 0;
+    }
+    
+
 }
