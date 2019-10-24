@@ -83,7 +83,7 @@ body{
     text-decoration: none;
     color: white;
     font-family: 'Segoe UI';
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px;
 }
 .menukanan:hover{
@@ -175,7 +175,7 @@ body{
     height:450px;
 }
 .listmenu{
-    padding: 80px 10px 20px 10px;
+    padding: 60px 10px 20px 10px;
     height: 250px;
     
 }

@@ -100,7 +100,7 @@ body{
     text-decoration: none;
     color: white;
     font-family: 'Segoe UI';
-    font-size: 20px;
+    font-size: 15px;
 }
 .menukiri .jenjang{
     text-decoration: none;
@@ -179,9 +179,16 @@ body{
 }
 
 .listmenu{
-    padding: 60px 10px 20px 10px;
+    padding: 50px 10px 20px 10px;
     height: 250px;
     
+}
+#profilku:hover, #recent:hover, #arsip:hover{
+    background-color: whitesmoke;
+}
+#edit:hover, #logout:hover{
+    background-color: rgb(183, 206, 207);
+    color: teal;
 }
 .identitas{
     font-family: Segoe UI;
