@@ -248,12 +248,12 @@ td:hover{
     }
 
     .search {
-        width: 20%;
-        margin: 0;
-        }
+        width: 40%;
+        margin-left: 10%;
+    }
     .button {
-        width: 20%;}
-    
+        margin: auto;
+    }
     .icon{
         display: none;
     }
@@ -306,7 +306,6 @@ td:hover{
         width: 50%;
         font-size: 70%;
         margin: 10% auto;
-       
         
     }
     .baris{
