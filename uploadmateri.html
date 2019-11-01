@@ -89,4 +89,34 @@
     </div>
 </div>
 </body>
+<script>
+    $(document).ready(function(){
+        
+        var file=this.files;
+        
+        if(File && file[0]) {
+            ReadImage(file[0]); 
+        }
+    })
+
+    var ReadImage = function(file){
+        var reader=new FileReader;
+        var image=new image;
+        reader.readAsDataURL(file);
+        reader.onload=function(_file){
+
+            image.src = _file.target.result;
+            image.onload = function(){
+
+                var height=this.height;
+                var width=this.width;
+                var type=file.type;
+                var size=~~(file.size/1024)+"KB";
+            }
+        }
+    }
+
+
+
+</script>
 </html>
