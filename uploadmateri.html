@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href=edit.css>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="favicon(1).ico">
@@ -66,11 +65,20 @@
             </div>
                 <div class="detail">
                     <p id="teks">Silahkan Upload Materi Anda</p>
+                    
                     <div class="upload">
                         <p style="font-size: 50px;text-align: center;margin: 20px auto;">+</p>
-                        <input id="input" type="file" name="fileupload"></input>
+                        <input type="file" id="imageBrowes" />
+                    </div>
+                    
+                    <div id="imgPreview" class="thumbnail" style="display:none">
+                        <img class="img-responsive" id="targetImg" />
+                        <div class="caption">
+                            <span id="description"></span>
+                        </div>
                     </div>
                 </div>
+            </div>
             <button id="edit">simpan</button>
         </div></td>
     </container>
@@ -88,35 +96,48 @@
         </div>
     </div>
 </div>
-</body>
+<script src="jQuery.js"></script>
 <script>
-    $(document).ready(function(){
-        
-        var file=this.files;
-        
-        if(File && file[0]) {
-            ReadImage(file[0]); 
+    $(document).ready(function () {
+
+    $("#imageBrowes").change(function () {           
+
+        var File = this.files;
+
+        if (File && File[0]) {
+            ReadImage(File[0]);
         }
+
     })
 
-    var ReadImage = function(file){
-        var reader=new FileReader;
-        var image=new image;
-        reader.readAsDataURL(file);
-        reader.onload=function(_file){
 
-            image.src = _file.target.result;
-            image.onload = function(){
+    })
 
-                var height=this.height;
-                var width=this.width;
-                var type=file.type;
-                var size=~~(file.size/1024)+"KB";
-            }
+
+    var ReadImage = function (file) {
+
+    var reader = new FileReader;
+    var image = new Image;
+
+    reader.readAsDataURL(file);
+    reader.onload = function (_file) {
+
+        image.src = _file.target.result;
+        image.onload = function () {
+
+            var height = this.height;
+            var width = this.width;
+            var type = file.type;
+            var size = ~~(file.size / 1024) + "KB";
+
+            $("#targetImg").attr('src', _file.target.result);
+            $("#description").text("Size:" + size + ", " + height + "X " + width + ", " + type + "");
+            $("#imgPreview").show();
+
         }
+
     }
-
-
-
+}
 </script>
+</body>
 </html>

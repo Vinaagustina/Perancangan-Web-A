@@ -254,17 +254,24 @@ body{
 .upload{ 
     margin: 50px auto;
 }
-#input{
-    margin-left: 40px ;
-    
-}
+
 .upload{
     margin: 50px auto;
     border-radius:10px;
     border:3px rgb(22, 82, 105) outset;
-    width:250px;
-    height: 150px;
+    width:350px;
+    height: 200px;
     border-style: dashed;
+}
+#imageBrowes{
+    margin-left: 80px ;}
+
+.imgresponsive{
+    width: 50%;
+    height: 50%;
+}
+#targertImg.imgresponsive{
+    width: 50%;
 }
 
 #edit {
