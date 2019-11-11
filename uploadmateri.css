@@ -259,11 +259,14 @@ body{
     margin: 50px auto;
     border-radius:10px;
     border:3px rgb(22, 82, 105) outset;
-    width:350px;
-    height: 200px;
+    width:250px;
+    height: 150px;
     border-style: dashed;
 }
-#imageBrowes{
+#deskripsi{
+    font-size: 14px;
+}
+/* #imageBrowes{
     margin-left: 80px ;}
 
 .imgresponsive{
@@ -272,7 +275,7 @@ body{
 }
 #targertImg.imgresponsive{
     width: 50%;
-}
+} */
 
 #edit {
     margin: 20px 30px 60px 20px;
