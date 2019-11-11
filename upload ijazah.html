@@ -45,8 +45,9 @@
 				<form>
 					<p style="text-align: center;font-size: 14px;font-family: Segoe UI;margin: 20px auto;">Silahkan Upload Ijazah Pendidikan Terakhir Anda</p>
 					<div class="upload">
-						<img src="#" id="preview" alt="masukkan dokumen" style="width:250px;height:150px;margin: 0px auto;"></p>
-						<input type="file" id="img" style="margin: 0px auto;">
+						<img src="#" id="preview" style="width:250px;height:150px;margin: 0px auto;"></p>
+						<input type="file" id="img" accept="image/*" style="margin: 0px auto;">
+						<div id="info"></div>
 					</div>
 					<button type="submit"><a style="text-decoration: none; color: black;" href="Halaman Login.html">Next</button></a>
 					<br></br>
@@ -68,21 +69,79 @@
 			</footer>
 		</div>
 	</div>
+<!--
+							<div id="form_wrap">
+							<form action="profile.html">
+							<div id="upload_avatar" class="baris">
+								<div id="avatar_wrap" class="kol-m-4">
+									<img id="avatar_img" src="image/emot_file.jpg">
+								</div>
+
+								<div id="file_info" class="kol-m-7">
+									
+								</div>	
+							</div>
+
+							<div id="upload_btn">
+								<label for="btn_file" class="uploadIcon">Choose File</label>
+								<input type="file" name="avatar" id="btn_file" value="Choose File" accept="image/*">
+							</div>-->
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$.fn.uploadGambar = function () { //extending jquery
+			this.change(function(event) {
+		    	if(this.files.length > 0){
+		    		console.log(this.files[0]);
+	    		//	var name = this.files[0].name;
+	    			var size = this.files[0].size;
+
+	    			var ukuran = "";
+	    			if (size >= 1000000 ) { //MB
+	    				size = Math.ceil(size/1000000); 
+	    				ukuran = size + "MB"; 
+	    			} 
+	    			else if (size >= 1000) { //KB
+	    				size = Math.ceil(size/1000);
+	    				ukuran = size + " KB";
+	    			}
+	    			else if(size < 1000){
+	    				ukuran = size + "Byte";
+	    			}
+	    			
+	    			$("#info").html(`
+	    				size: `+ukuran+ ` `
+	    			);
+		    		
+		    		if (this.files && this.files[0]) {
+		    		  var reader = new FileReader();
+
+		    		  reader.onload = function(e) {
+		    		    $('#preview').show();
+		    		    $('#preview').attr('src', e.target.result);
+		    		  }
+
+		    		  reader.readAsDataURL(this.files[0]);
+		    		}
+		    	}
+			});
+		}
+
+		$("#img").uploadGambar();
+//function readURL(input) {
+//    if (input.files && input.files[0]) {
+//        var reader = new FileReader();
+//
+//        reader.onload = function(e) {
+//            $('#preview').attr('src', e.target.result);
+//        }
+//		reader.readAsDataURL(input.files[0]);
+//    }
+//}
+//
+//$("#img").change(function() {
+//    readURL(this);
+//});
+</script>
 </body>
 </html>
-<script>
-function readURL(input) {
-    if (input.files && input.files[0]) {
-        var reader = new FileReader();
-
-        reader.onload = function(e) {
-            $('#preview').attr('src', e.target.result);
-        }
-		reader.readAsDataURL(input.files[0]);
-    }
-}
-
-$("#img").change(function() {
-    readURL(this);
-});
-</script>

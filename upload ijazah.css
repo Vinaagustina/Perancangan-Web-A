@@ -3,6 +3,9 @@
    		padding:0;
    		height:100%;
 	}
+	#info{
+		font-size: 13px;
+	}
     button[type=submit]{
     	position:relative;
     	padding: 7px 16px;
