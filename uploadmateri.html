@@ -102,7 +102,7 @@
 </div>
 <script src="jQuery.js"></script>
 <script>
-	$.fn.uploadGambar = function () { //extending jquery
+	$.fn.uploadDocument = function () { //extending jquery
 		this.change(function(event) {
 		    if(this.files.length > 0){
 		    	console.log(this.files[0]);
@@ -140,7 +140,7 @@
 		});
 	}
 
-        $("#img").uploadGambar();
+        $("#img").uploadDocument();
         
     // $(document).ready(function () {
 
