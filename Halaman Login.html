@@ -39,20 +39,26 @@
 			</header>
 		</div>			
 		<div class="content">
-			<div class="form">
-				<form>
-					<br> <h4 align="center"> Selamat Datang </label> </br>
-					<label> ____________________ </label> <br>
-					<br><label> Username: </label></br>
-					<input type="text" name="Username" placeholder="Masukkan Username"><br>
-					<br><label>Password: </label> </br>
-					<input type="password" name="Password" placeholder="Masukkan Password"><br>
-					<a id="pw" href="lupa password.html">Lupa Password ?</a>
-					<br></br>
-					<button type="submit"><a style="text-decoration: none; color: black;" href="menu.html">Masuk</button></a> 
-					<br></br>
-					<a id="akunmasuk">Sudah memiliki akun?</a>
-					<a id="masuk" href="buat akun.html">Daftar</a>
+				<label class="error" style="text-align: center; color: red ;font-family: Segoe UI;font-size: 15px;background: whitesmoke;">
+						<p><b></b></p>
+				</label>
+				<div class="form">
+					<form>
+						<br> <h4 align="center"><label style="font-family: segoe ui;color: teal;"> SELAMAT DATANG </label> </br>
+						<label> ____________________ </label> <br>
+						
+						<br><label style="font-family: segoe ui;color: teal;"> Username: </label></br>
+						<input type="text" name="username" placeholder="Masukkan Username"><br>
+						
+						<br><label style="font-family: segoe ui;color: teal;">Password: </label> </br>
+						<input type="password" name="password" placeholder="Masukkan Password"><br>
+						
+						<a id="pw" href="lupa password.html">Lupa Password ?</a>
+						<br></br>
+						<button type="submit" id="login" value="submit"><a style="text-decoration: none; color: black;" href="menu.html">Masuk</button></a> 
+						<br></br>
+						<a id="akunmasuk">Sudah memiliki akun?</a>
+						<a id="masuk" href="buat akun.html">Daftar</a>
 				</form>
 			</div>
 		</div>
@@ -69,7 +75,41 @@
 			</footer>
 		</div>
 	</div>
-</body>
-</html>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/top_menu.js"></script>
+	<script type="text/javascript">
+		function show_error(pesan) {
+			$(".error").find('b').html(pesan);
+			$(".error").show();
+			$(".error").fadeOut(2000);
+		}
+	
+		$('#login').on('click', function(event) {
+				event.preventDefault();
+
+				var username = $("input[name='username']").val();
+				var password = $("input[name='password']").val();
+
+				var namaAtur = /^[a-zA-Z' ]+$/; //alfabet(besar atau kecil), petik ('), dan spasi saja
+				var angka = /^\d+$/; //angka saja
+				var emailAtur = /^([a-zA-Z0-9_.+-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
+				
+				if ( username == ""|| password == "" ) {
+					show_error('Harap isi dengan lengkap!');
+				}
+
+				else if (!namaAtur.test(username.length < 13)){
+					show_error("maksimal 12 karakter")
+				}
+				else if (password.length < 9) {
+					show_error("Password harus minimal 9 karakter");
+				}
+				else{
+					$("#login").off('click').trigger('click');
+				}
+		});
+	</script>
+	</body>
+	</html>
 
 
