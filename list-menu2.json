@@ -1,0 +1,14 @@
+[
+    {
+        "img":"kimia.png",
+        "id":"kimia"
+    },
+    {
+        "img":"math.png",
+        "id":"matematika"
+    },
+    {
+        "img":"fisika.png",
+        "id":"fisika"
+    }
+]
