@@ -61,10 +61,12 @@
 					<input type="number" name="Tahun" placeholder="Tahun Lahir">
 					<br>
 					<p><select name="Gender">
+						<option>--Pilih Jenis Kelamin--</option>
 						<option>Laki-laki</option>
 						<option>Perempuan</option>
 					</select>
 					<select name="Jenjang">
+						<option>--Pilih Jenjang--</option>
 						<option>SD</option>
 						<option>SMP</option>
 						<option>SMA</option>
@@ -102,7 +104,7 @@
 		$(".error").fadeOut(2000);
 	}
 
-	$('#login').on('click', function(event) {
+	$('#login').on('submit', function(event) {
 			event.preventDefault();
 			var nama = $("input[name='nama']").val();
 			var email = $("input[name='email']").val();
@@ -131,7 +133,7 @@
 				show_error("Password harus minimal 9 karakter");
 			}
 			else{
-				$("#login").off('click').trigger('click');
+				$("#login").off('submit').trigger('submit');
 			}
 	});
 </script>
