@@ -67,7 +67,16 @@
 					<input type="button" name="navsoal" value="3">
 					<input type="button" name="navsoal" value="4">
 					<input type="button" name="navsoal" value="5">
-					<a href="pembahasan.html" style="text-decoration: none;"> <p style="text-align: left;font-size: 15px;color: red;font-family: Mangal;margin: 5px;">Finish Attempt..</p></a>
+					<a href="#" id="exambutton" style="text-decoration: none;"> <p style="text-align: left;font-size: 15px;color: red;font-family: Mangal;margin: 5px;">Finish Attempt..</p></a>
+						<!-- Deklarasi Modal -->
+						<div id="exammodal" class="modal">
+	  						<!-- Konten Modal -->
+	  						<div class="modal-content">
+								<span class="close">&times;</span>
+								<p>Apa anda yakin ingin menyelesaikan latihan soal ?</p>
+								<button><a style="text-decoration: none; color: black;" href="pembahasan.html">OK</button>
+							</div>
+						</div>
 					<a> Time left : <span id="timer"></span></a>
 				</div></td>
 		</div>
@@ -141,4 +150,30 @@
         hitung();
     });
 // ]]>
+
+    // Panggil Elemen Modal-nya
+	var modal = document.getElementById('exammodal');
+ 
+	// Panggil Elemen Button-nya
+	var btn = document.getElementById("exambutton");
+ 
+	// Panggil Elemen Close-nya, untuk mensimulasikan efek tutup
+	var span = document.getElementsByClassName("close")[0];
+ 
+	// Saat Pengguna Menekan Button, Lakukan Pemanggilan Modal 
+	btn.onclick = function() {
+	  modal.style.display = "block";
+	}
+ 
+	// Saat Pengguna Menekan Tombol X (close), simulasikan efek tutup
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+ 
+	// Saat Pengguna menekan sesuatu, diluar dari modal, simulasikan efek tutup
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+		modal.style.display = "none";
+	  }
+	}
 </script>
