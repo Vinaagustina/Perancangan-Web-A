@@ -74,7 +74,7 @@
 	  						<div class="modal-content">
 								<span class="close">&times;</span>
 								<p>Apa anda yakin ingin menyelesaikan latihan soal ?</p>
-								<button><a style="text-decoration: none; color: black;" href="pembahasan.html">OK</button>
+								<button class="ok"><a style="text-decoration: none; color: black;" href="pembahasan.html">OK</button>
 							</div>
 						</div>
 					<a> Time left : <span id="timer"></span></a>
@@ -96,84 +96,44 @@
 </html>
 <script src = "http://code.jquery.com/jquery-1.10.2.min.js" type = "text/javascript"> </script>
 <script type ="text/javascript">
-    //$(document).ready(function() {
-        /** Membuat Waktu Mulai Hitung Mundur Dengan
-          * var detik = 0,
-          * var menit = 1,
-          * var jam = 0
-        */
-    //    var detik = 00;
-    //    var menit = 20;
-    //    var jam = 0;
-        /**
-          * Membuat function hitung() sebagai Penghitungan Waktu
-        */
-    //    function hitung() {
-            /** setTimout(hitung, 1000) digunakan untuk
-                * mengulang atau merefresh halaman selama 1000 (1 detik)
-            */
-    //        setTimeout(hitung, 1000);
-            /** Jika waktu kurang dari 10 menit maka Timer akan berubah menjadi warna merah */
-    //        if (menit < 5 && jam == 0) {
-    //            var peringatan = 'style="color:red"';
-    //        };
-            /** Menampilkan Waktu Timer pada Tag #Timer di HTML yang tersedia */
-    //        $('#timer').html(
-    //             + jam + ':' + menit + ':' + detik + ''
-    //        );
-            /** Melakukan Hitung Mundur dengan Mengurangi variabel detik - 1 */
-    //        detik--;
-            /** Jika var detik < 0
-                * var detik akan dikembalikan ke 59
-                * Menit akan Berkurang 1
-            */
-    //        if (detik < 0) {
-    //            detik = 59;
-    //            menit--;
-                /** Jika menit < 0
-                    * Maka menit akan dikembali ke 59
-                    * Jam akan Berkurang 1
-                */
-    //            if (menit < 0) {
-    //                menit = 59;
-    //                jam--;
-                    /** Jika var jam < 0
-                        * clearInterval() Memberhentikan Interval dan submit secara otomatis
-                    */
-    //                if (jam < 0) {
-    //                    clearInterval();
-    //                }
-    //            }
-    //        }
-    //    }
-        /** Menjalankan Function Hitung Waktu Mundur */
-    //    hitung();
-    //});
-// ]]>
 
-    // Panggil Elemen Modal-nya
+	//modal finish attempt
+
 	var modal = document.getElementById('exammodal');
- 
-	// Panggil Elemen Button-nya
-	var btn = document.getElementById("exambutton");
- 
-	// Panggil Elemen Close-nya, untuk mensimulasikan efek tutup
-	var span = document.getElementsByClassName("close")[0];
- 
-	// Saat Pengguna Menekan Button, Lakukan Pemanggilan Modal 
-	btn.onclick = function() {
+ 	var btn = document.getElementById("exambutton");
+ 	var span = document.getElementsByClassName("close")[0];
+ 	btn.onclick = function() {
 	  modal.style.display = "block";
 	}
- 
-	// Saat Pengguna Menekan Tombol X (close), simulasikan efek tutup
-	span.onclick = function() {
+ 	span.onclick = function() {
 	  modal.style.display = "none";
 	}
- 
-	// Saat Pengguna menekan sesuatu, diluar dari modal, simulasikan efek tutup
-	window.onclick = function(event) {
+ 	window.onclick = function(event) {
 	  if (event.target == modal) {
 		modal.style.display = "none";
 	  }
 	}
+
+	//timer
+
+document.getElementById('timer').innerHTML =
+  30 + ":" + 00;
+	startTimer();
+	function startTimer() {
+  		var presentTime = document.getElementById('timer').innerHTML;
+  		var timeArray = presentTime.split(/[:]+/);
+  		var m = timeArray[0];
+  		var s = checkSecond((timeArray[1] - 1));
+  	if(s==59){m=m-1}
+  	//if(m<0){alert('timer completed')}
+  		document.getElementById('timer').innerHTML =
+    	m + ":" + s;
+  		setTimeout(startTimer, 1000);
+	}
+	function checkSecond(sec) {
+  		if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+  		if (sec < 0) {sec = "59"};
+  		return sec;
+	}
+
 </script>
