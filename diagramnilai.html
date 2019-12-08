@@ -40,8 +40,11 @@
 				<input class="cari" type="button" value="cari" name="cari">
 			</header>
 		</div>
+        <div id="judul">
+            <a style="fontfamily=segoe ui">Diagram Nilai</a>
+        </div>
 		<div class="diagram">
-            <!-- <a id="diagram">Diagram Nilai</a> -->
+            
             <canvas id="canvasnilai"></canvas>
 
 		</div>
@@ -71,9 +74,6 @@
     
             var ctx = canvas.getContext('2d');
             console.log('ctx', ctx);
-            
-            ctx.font='12 px segoe ui'
-            ctx.fillText("Diagram Nilai",20,20);
     
             ctx.fillStyle='rgb(231, 187, 187)';
             ctx.fillRect(10,20,30,200);
