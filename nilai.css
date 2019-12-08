@@ -172,13 +172,23 @@
 	}
 	#lihat a{
 		text-decoration: none;
-		color: white;
+		color:#fafafa;
 	}
-	.wrap .content #next:hover, #lihat:hover{
+	.wrap .content #next:hover{
 		background-color:#fafafa;
     	color:#207cca;
     	cursor: pointer;
 	}
+	#lihat a:hover{
+		background-color:#fafafa;
+    	color:#207cca;
+    	cursor: pointer;
+    }
+    #lihat:hover{
+		background-color:#fafafa;
+		color:#207cca;
+    	cursor: pointer;
+    }
 	.wrap .content .materinav{
 		border-radius:5px;
 		background-color:white;

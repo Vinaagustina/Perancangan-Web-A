@@ -195,7 +195,6 @@ body{
     font-size: 20px;
     font-weight: bold;
 }
-
 .box2{  
     margin: 20px 50px 80px 20px;
     border-radius:30px;
@@ -254,14 +253,19 @@ nav ul li a{
 }   
 #lat {
     text-decoration: none;
-    width: 80px;
+    width: 90px;
+    height: 40px;
     border: none;
     border-radius: 5px;
 }
 #lat:hover{
     background-color: lavender;
 }
-
+#lat a{
+    text-decoration: none;
+    color:rgb(22, 82, 105);
+    font-family: 'Segoe UI';
+}
 @media screen and (max-width: 480px){
     .wrapper{
         width: 100%;
