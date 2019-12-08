@@ -218,6 +218,7 @@ body{
 }
 #profilku:hover, #recent:hover, #arsip:hover{
     background-color: whitesmoke;
+    cursor: pointer;
 }
 .listmenu li{
     text-decoration: none;

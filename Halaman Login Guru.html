@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SMART ACADEMY</title>
+	<link rel="shortcut icon" href="favicon(1).ico">
+	<link rel="stylesheet" type="text/css" href="Halaman Login.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body background="bg 3.jpg" style="background-size: cover;">
+	<div class="wrap">
+		<div class="header">
+			<header>
+				<p  id="judul">SMART ACADEMY</p>
+				<ul id="menu1">
+					<li><a href="kontak.html">Contact</a></li>
+					<li><a href="Halaman Login Guru.html">Akun</a></li>
+					<li><a href="index.html">Home</a></li>
+				</ul>
+				<ul id="menu2">
+					<li> Jenjang &or;
+						<ul>
+							<li><a href="#">SD</a></li>
+							<li><a href="#">SMP</a></li>
+							<li><a href="menu guru.html">SMA</a></li>
+						</ul>
+					</li>
+					<li> Materi &or; 
+						<ul>
+							<li><a href="#">Matematika</a></li>
+							<li><a href="materi.html">Biologi</a></li>
+							<li><a href="#">English</a></li>
+							<li><a href="#">IPS</a></li>
+							<li><a href="#">Lainnya..</a></li>
+						</ul>
+					</li>
+				</ul>
+				<input class="kotak" type="text" name="Telusuri" placeholder="Telusuri">
+				<input class="cari" type="button" value="cari" name="cari">
+			</header>
+		</div>			
+		<div class="content">
+				<div class="form">
+					<form action="menu guru.html">
+						<br> <h4 align="center"><label style="font-family: segoe ui;color: teal;"> SELAMAT DATANG </label> </br>
+						<label> ____________________ </label> <br>
+						
+						<br><label style="font-family: segoe ui;color: teal;"> Username: </label></br>
+						<input type="text" name="username" placeholder="Masukkan Username"><br>
+						
+						<br><label style="font-family: segoe ui;color: teal;">Password: </label> </br>
+						<input type="password" name="password" placeholder="Masukkan Password"><br>
+						
+						<a id="pw" href="lupa password.html">Lupa Password ?</a>
+						<br></br>
+						<button type="submit" id="login" value="submit"><a style="text-decoration: none; color: black;" href="menu guru.html">Masuk</button></a> 
+						<br></br>
+						<a id="akunmasuk">Sudah memiliki akun?</a>
+						<a id="masuk" href="buat akun guru.html">Daftar</a>
+				</form>
+			</div>
+		</div>
+
+		<div class="error" id="popup_error">
+			<div class="error_content">
+				<div class="error_top">
+					<h3>Warning !!!</h3>
+				</div>
+
+				<div class="error_middle">
+					<b></b>
+				</div>
+
+				<div class="error_bottom">
+					<button class="btn" id="close_error_form">Cancel</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<footer>
+				<p id="footer1"> © 2019 Smart Academy  |
+					<a  id="footer2" href="ketentuan layanan.html">Ketentuan Layanan </a> |
+					<a id="footer3" href="kebijakan privasi.html">Kebijakan Privasi </a></p>
+				<a href="http://twitter.com"><img id="twitter" src="twitter.png"></a>
+				<a href="http://facebook.com"><img id="facebook" src="facebook.png"></a>
+				<a href="http://gmail.com"><img id="google" src="google-plus.png"></a>
+				<a id="footer" href="about us.html"> About Us</a>
+			</footer>
+		</div>
+	</div>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/top_menu.js"></script>
+	<script type="text/javascript">
+
+//modal untuk error form
+
+	function modalShow() {
+		$("#id_modal").show();
+		$("#id_modal").css('animation', 'show_modal');
+	}
+
+	function modalHide() {
+		$("#id_modal").css('animation', 'hide_modal');
+		setTimeout(function function_name() {
+			$("#id_modal").hide();
+		}, 300);
+	}
+
+	function show_error(pesan) {
+		$("#popup_error").find('b').html(pesan);
+		$("#popup_error").show();
+		$("#popup_error").css('animation', 'show_modal');
+
+	$("#close_error_form").click(function(event) {
+		$("#popup_error").css('animation', 'hide_modal');
+		setTimeout(function function_name() {
+			$("#popup_error").hide();
+		}, 300);
+	});
+
+	window.onclick = function(event) {
+		var modal = document.getElementById('popup_error');
+		if(event.target == modal){
+			$("#popup_error").css('animation', 'hide_modal');
+			setTimeout(function function_name() {
+				$("#popup_error").hide();
+			}, 300);
+		}
+	};
+}
+
+//validasi form
+	
+		$('#login').on('click', function(event) {
+				event.preventDefault();
+
+				var username = $("input[name='username']").val();
+				var password = $("input[name='password']").val();
+				var namaAtur = /^[a-zA-Z' ]+$/; //alfabet(besar atau kecil), petik ('), dan spasi saja
+				var angka = /^\d+$/; //angka saja
+				var emailAtur = /^([a-zA-Z0-9_.+-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
+				
+				if ( username == ""|| password == "" ) {
+					show_error('Harap isi dengan lengkap!');
+				}
+
+				else if (!namaAtur.test(username.length < 13)){
+					show_error("maksimal 12 karakter")
+				}
+				else if (password.length < 9) {
+					show_error("Password harus minimal 9 karakter");
+				}
+				else{
+					$("#login").off('click').trigger('click');
+				}
+		});
+	</script>
+	</body>
+	</html>
+
+
+
