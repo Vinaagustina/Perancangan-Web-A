@@ -194,4 +194,19 @@ button[type=submit]:hover{
     .wrap .footer #footer1, #footer2, #footer3{
     font-size: 75%;
     }
+    .wrap #judul{
+    margin: 50% auto;
+    margin-bottom: 10%;
+    margin-top: 10%;
+
+    }
+    #canvasnilai{
+    margin: 50% auto;
+    margin-top: 2%;
+    margin-left: 20%;
+    }
+    .wrap .diagram{
+    margin: 50% auto;
+    margin-top: 2%;
+    }
 }
