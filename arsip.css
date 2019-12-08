@@ -156,10 +156,17 @@ body{
 }
 #profilku:hover, #recent:hover, #arsip:hover{
     background-color: whitesmoke;
+    cursor: pointer;
 }
-#edit:hover, #logout:hover{
+#edit:hover{
     background-color: rgb(183, 206, 207);
     color: teal;
+    cursor: pointer;
+}
+#logout:hover{
+    background-color: rgb(183, 206, 207);
+    color: teal;
+    cursor: pointer;
 }
 .identitas{
     font-family: Segoe UI;
