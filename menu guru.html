@@ -62,12 +62,12 @@
                 </tr>
             </table>
         <div class="nextback">
-            <button id="back">< kembali</button>
-            <button id="next"> selanjutnya ></button>
+            <button id="back"> kembali</button>
+            <button id="next">selanjutnya ></button>
         </div>
             
         </div>
-    </div>
+    </div> 
         
     <div class="footer">
             <a class="cc" >© 2019 Smart Academy </a> 
@@ -96,6 +96,16 @@
         $.each(data,function(i, menu2){
             $("ul.pilihanmenu").append("<li>"+menu2+"</li>"); })
     })
+    $.ajax({
+        url         : "list-menu2.json",
+        type        : "GET",
+        dataType    : "json",
+        data        : {get_param : 'value'},
+        success     : function(data){
+
+    document.getElementsByTagName('pilihanmenu')[1].value = JSON.stringify(data);
+    }
+});
 }
 </script>
 </body>
