@@ -89,14 +89,10 @@
     $(document).ready(function(){
         console.log('doc ready');
     })
-    function menu2(){
-        console.log('menu2');
     $.getJSON('list-menu2.json',function(data){
         console.log(data);
-        $.each(data,function(i, menu2){
-            $("ul.pilihanmenu").append("<li>"+menu2+"</li>"); })
-    })
-    }
+        })
+
     $("#next").click(function(event){
             var hal=$(".pilihanmenu").attr('page');
             hal= Number(hal);
@@ -110,21 +106,21 @@
                 if (hal == 3) {
                     $("#next").hide();
                 }
-                var path = 'json/list-menu2'+hal+'.json';
+
+            // var path = "list-menu2.json" +hal+ ".json";
+            
             $.ajax({
-                url: path,
+                url: "list-menu2.json",
                 type: 'GET',
                 dataType: 'json',
-                    // data: { }
             })
             .done(function(hasil) {
                     console.log("success");
                     var gabung = "";
                     $.each(hasil, function(index, val) {
                         gabung += ` <td class="kimia"><img id="`+val.id+`" src="`+val.img+`" style="width:90px;height: 90px;"><br>Kimia</a></td>`;
-
                     })
-                    $("#list_video").append(gabung);
+                    $(".pilihanmenu").append(gabung);
             })
             .fail(function(){
                 console.log("eror");
