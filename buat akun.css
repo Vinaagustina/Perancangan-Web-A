@@ -320,7 +320,7 @@
 	.wrap .footer #footer1, #footer2, #footer3{
 		font-size: 75%;
 	}
-
+}
 	@keyframes show_modal{
 	from{
 		transform: scale(0);
