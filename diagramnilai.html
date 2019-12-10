@@ -46,6 +46,7 @@
 		<div class="diagram">
             
             <canvas id="canvasnilai"></canvas>
+            <!-- <canvas id="tulisan"></canvas> -->
 
 		</div>
         <div class="footer">
@@ -75,16 +76,40 @@
             var ctx = canvas.getContext('2d');
             console.log('ctx', ctx);
     
+            ctx.font = '8px segoe ui';
+            ctx.font = 'silver';
+
+
             ctx.fillStyle='rgb(231, 187, 187)';
-            ctx.fillRect(10,20,30,200);
+            ctx.fillRect(10,30,30,200);
+            ctx.fillText('biologi', 10, 30);
+            
             ctx.fillStyle='rgb(146, 203, 230)';
             ctx.fillRect(70,50,30,180);
+            ctx.fillText('virus', 70, 50);
+            
             ctx.fillStyle='rgb(233, 221, 170)';
             ctx.fillRect(130,25,30,200);
+            ctx.fillText('ptotista', 130, 25);
+
             ctx.fillStyle='rgb(221, 192, 211)';
             ctx.fillRect(190,70,30,170);
+            ctx.fillText('fungi', 190, 70);
+            
             ctx.fillStyle='rgb(252, 206, 188)';
             ctx.fillRect(250,20,30,310);
+            ctx.fillText('hayati', 250, 20);
         }
+
+        // function drawCanvas(){
+        //     console.log('start draw to canvas');
+        //     var canvas = document.getElementById("tulisan")
+        //     console.log('canvas', canvas);
+    
+        //     var ctx = canvas.getContext('2d');
+        //     console.log('ctx', ctx);
+        //     ctx.fillText('hayati', 250, 20);
+            
+        // }
     </script>
 </html>

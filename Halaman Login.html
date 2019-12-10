@@ -108,8 +108,10 @@
 
 	function show_error(pesan) {
 		$("#popup_error").find('b').html(pesan);
-		$("#popup_error").show();
 		$("#popup_error").css('animation', 'show_modal');
+		setTimeout(function function_name() {
+			$("#popup_error").show();
+		}, 300)
 
 	$("#close_error_form").click(function(event) {
 		$("#popup_error").css('animation', 'hide_modal');
