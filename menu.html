@@ -86,6 +86,11 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <!-- <script src="js/ajax-fetch.js"></script> -->
 <script type="text/javascript">
+    $(document).ready(function() {
+         $("#next").click(function() {
+            $(".pilihanmenu").hide();})
+    })
+
     $(document).ready(function(){
         console.log('doc ready');
     })
@@ -108,24 +113,30 @@
             // //     }
 
             // // menampilkan json di html
+            $(".pilihanmenu").remove();
 
             $.ajax({
                 url: "list-menu2.json",
                 type: 'GET',
                 dataType: 'json',
             })
+
             .done(function(hasil) {
                     console.log("success");
                     var gabung = "";
                     $.each(hasil, function(index, val) {
                         gabung += ` <td class="kimia"><img id="`+val.id+`" src="`+val.img+`" style="width:90px;height: 90px;"><br>Kimia</a></td>`;
                     })
+                    
                     $(".pilihanmenu").append(gabung);
+                    $(".pilihanmenu").remove();
             })
+            
             .fail(function(){
                 console.log("eror");
             })
         })
+
 
 </script>
 </body>
