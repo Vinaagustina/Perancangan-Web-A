@@ -322,7 +322,7 @@
 		font-size: 75%;
 	}
 
-}	
+	
 	@keyframes show_modal{
 	from{
 		transform: scale(0);
