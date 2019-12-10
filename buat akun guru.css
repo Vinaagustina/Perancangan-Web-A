@@ -196,7 +196,7 @@
   		background-color: #F0FFF0;
   		padding-top: 50px;
   		animation: show_modal;	
-  		animation-duration: 0.3s;
+  		animation-duration: 3s;
 	}
 
 	.modal-content{
@@ -244,7 +244,7 @@
 		font-size: 14px;
 		overflow: auto; 
 		animation: show_modal;
-		animation-duration: 0.3s;
+		animation-duration: 3s;
 	}
 
 	.error_content{	
@@ -322,7 +322,7 @@
 		font-size: 75%;
 	}
 
-	
+}	
 	@keyframes show_modal{
 	from{
 		transform: scale(0);
@@ -334,6 +334,7 @@
 		opacity: 1;
 		z-index: 2;
 	}
+}
 
 	@keyframes hide_modal{
 	from{
