@@ -118,6 +118,14 @@ button[type=submit]:hover{
     margin-left: 630px;
     
 }
+/* #tulisan{
+    border: 1px solid;
+    margin-left: 350px;
+    width: 50%;
+    margin-top: -27px;
+    height: 100px;
+    
+} */
 #canvasnilai{
     width: 50%;
     border: 4px solid #5F9EA0;

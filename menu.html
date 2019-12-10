@@ -94,21 +94,21 @@
         })
 
     $("#next").click(function(event){
-            var hal=$(".pilihanmenu").attr('page');
-            hal= Number(hal);
-            if (hal==""){
-                hal = 2;
-            }
-            else{
-                hal += 1;
-            }
-            $(".pilihanmenu").attr('page', hal);
-                if (hal == 3) {
-                    $("#next").hide();
-                }
+            // var hal=$(".pilihanmenu").attr('page');
+            // hal= Number(hal);
+            // // if (hal==""){
+            // //     hal = 2;
+            // // }
+            // // else{
+            // //     hal += 1;
+            // // }
+            // // $(".pilihanmenu").attr('page', hal);
+            // //     if (hal == 3) {
+            // //         $("#next").hide();
+            // //     }
 
-            // var path = "list-menu2.json" +hal+ ".json";
-            
+            // // menampilkan json di html
+
             $.ajax({
                 url: "list-menu2.json",
                 type: 'GET',
