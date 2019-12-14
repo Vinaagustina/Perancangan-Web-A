@@ -88,7 +88,7 @@
 <script type="text/javascript">
     $(document).ready(function() {
          $("#next").click(function() {
-            $(".pilihanmenu").hide();})
+          
     })
 
     $(document).ready(function(){
@@ -113,7 +113,7 @@
             // //     }
 
             // // menampilkan json di html
-            $(".pilihanmenu").remove();
+           
 
             $.ajax({
                 url: "list-menu2.json",
@@ -129,13 +129,14 @@
                     })
                     
                     $(".pilihanmenu").append(gabung);
-                    $(".pilihanmenu").remove();
+                    
             })
             
             .fail(function(){
                 console.log("eror");
             })
         })
+    })
 
 
 </script>
